@@ -41,17 +41,16 @@
 
 ## **Objetivo Visual**
 
-Un mapa mental (texto) que el alumno pueda replicar en su cuaderno:
 
-```
-Dato de entrada ──► [Función] ──► Tipo devuelto
-   CHAR           ──► UPPER/SUBSTR/REPLACE ──► CHAR
-   NUMBER         ──► ROUND/TRUNC/MOD       ──► NUMBER
-   DATE           ──► ADD_MONTHS/NEXT_DAY   ──► DATE
-   CHAR/DATE/NUM  ──► TO_CHAR               ──► CHAR (usa format model)
-   CHAR           ──► TO_DATE/TO_NUMBER     ──► DATE/NUMBER (usa format model)
-   ANY            ──► NVL/NVL2/COALESCE     ──► Tipo del 1er no-NULL
-```
+| **Dato de entrada**    | **Función**                  | **Tipo devuelto**                    | **Notas**                              |
+| ---------------------- | ---------------------------- | ------------------------------------ | -------------------------------------- |
+| `CHAR`                 | `UPPER`, `SUBSTR`, `REPLACE` | `CHAR`                               | Manipulan cadenas de texto.            |
+| `NUMBER`               | `ROUND`, `TRUNC`, `MOD`      | `NUMBER`                             | Realizan operaciones numéricas.        |
+| `DATE`                 | `ADD_MONTHS`, `NEXT_DAY`     | `DATE`                               | Devuelven fechas ajustadas.            |
+| `CHAR / DATE / NUMBER` | `TO_CHAR`                    | `CHAR` *(usa format model)*          | Convierte valores a texto formateado.  |
+| `CHAR`                 | `TO_DATE`, `TO_NUMBER`       | `DATE / NUMBER` *(usa format model)* | Convierte texto al tipo especificado.  |
+| `ANY`                  | `NVL`, `NVL2`, `COALESCE`    | Tipo del **primer valor no-NULL**    | Mantienen el tipo del valor retornado. |
+
 
 **Regla de oro:** al *anidar*, valida el tipo que entra/sale de cada función.
 
