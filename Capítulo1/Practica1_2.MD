@@ -1,13 +1,6 @@
+# **Práctica 1.2 SQL Básicos**
 
-
-#  **Práctica 1.2 – SQL Básicos**
-
-## **Objetivo general**
-
-Al finalizar esta práctica, serás capaz de ejecutar consultas SQL básicas en Oracle Database utilizando el esquema de práctica disponible, aplicando filtros y operadores lógicos, variables de sustitución y manejo correcto de valores NULL.
-
-
-## **Objetivos específicos**
+## **Objetivos**
 
 1. Reconocer las tablas y relaciones principales del esquema **HR**.
 2. Ejecutar sentencias `SELECT` con cláusulas `WHERE` y `ORDER BY`.
@@ -24,7 +17,7 @@ Al finalizar esta práctica, serás capaz de ejecutar consultas SQL básicas en 
 
 
 
-## **Tabla de ayuda**
+## **Tabla de Ayuda**
 
 | Concepto                  | Descripción breve                                                                 | Referencia oficial Oracle                                                                                                                                            |
 | ------------------------- | --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -42,7 +35,7 @@ Al finalizar esta práctica, serás capaz de ejecutar consultas SQL básicas en 
 
 <br/> <br/>
 
-## Objetivo Visual
+## **Objetivo Visual**
 
 El diagrama representa la estructura de tablas relacionadas con la gestión de empleados, sus departamentos, puestos, ubicaciones geográficas y regiones. Las líneas punteadas indican las relaciones entre tablas mediante llaves foráneas (foreign keys).
  
@@ -52,7 +45,7 @@ El diagrama representa la estructura de tablas relacionadas con la gestión de e
 
 ## **Instrucciones**
 
-#### **Tarea 1: Verificar el modelo entidad-relación del esquema HR**
+### **Tarea 1. Verificar el modelo entidad-relación del esquema HR**
 
 1. Accede al esquema **HR** (ya disponible en la base de datos).
 2. Observa las tablas principales:
@@ -81,7 +74,7 @@ El diagrama representa la estructura de tablas relacionadas con la gestión de e
 
 <br/><br/>
 
-#### **Tarea 2: Verificar el entorno**
+### **Tarea 2. Verificar el entorno**
 
 1. Inicia sesión con tu usuario asignado en SQL*Plus, SQLcl o SQL Developer.
 2. Verifica la conexión ejecutando:
@@ -98,7 +91,7 @@ El diagrama representa la estructura de tablas relacionadas con la gestión de e
 
 <br/><br/>
 
-#### **Tarea 3: Recuperar datos básicos**
+### **Tarea 3. Recuperar datos básicos**
 
 1. Consulta todas las filas de la tabla `EMPLOYEES`:
 
@@ -124,7 +117,7 @@ El diagrama representa la estructura de tablas relacionadas con la gestión de e
 
 <br/><br/>
 
-#### **Tarea 4: Operadores y valores NULL**
+### **Tarea 4. Operadores y valores NULL**
 
 1. Ejecuta:
 
@@ -142,7 +135,7 @@ El diagrama representa la estructura de tablas relacionadas con la gestión de e
 
 <br/><br/>
 
-#### **Tarea 5: Uso de la tabla DUAL**
+### **Tarea 5. Uso de la tabla DUAL**
 
 1. Ejecuta operaciones matemáticas y funciones:
 
@@ -154,7 +147,7 @@ El diagrama representa la estructura de tablas relacionadas con la gestión de e
 
 <br/><br/>
 
-#### **Tarea 6: Variables de sustitución**
+### **Tarea 6. Variables de sustitución**
 
 1. Ejecuta con `&` (solicita cada vez el valor):
 
@@ -184,7 +177,7 @@ El diagrama representa la estructura de tablas relacionadas con la gestión de e
 
 <br/><br/>
 
-#### **Tarea 7: Combinar condiciones lógicas**
+### **Tarea 7. Combinar condiciones lógicas**
 
 1. Muestra empleados del departamento 50 con salario > 7000:
 
@@ -210,7 +203,7 @@ El diagrama representa la estructura de tablas relacionadas con la gestión de e
 
 <br/><br/>
 
-#### **Tarea 8: Desafío de consulta – Nivel certificación**
+### **Tarea 8. Desafío de consulta – Nivel certificación**
 
 Ejecuta las siguientes 10 consultas utilizando el esquema **HR**.
 No se muestran las soluciones; analiza el resultado esperado y valida tus consultas con base en la sintaxis y comportamiento de Oracle SQL.
@@ -248,7 +241,7 @@ Guarda tus sentencias en el mismo archivo `practica1_2.sql` debajo de esta secci
 
 <br/><br/>
 
-## Resultados esperados - Tarea 8: Desfío de consulta
+## **Resultado Esperado**
 
 | Nº | Concepto evaluado                | Verificación                         |
 | -- | -------------------------------- | ------------------------------------ |

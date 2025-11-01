@@ -1,15 +1,6 @@
-# Práctica 1.3 — Funciones de una sola fila + Fechas y conversión
+# **Práctica 1.3 Funciones de una sola fila, Fechas y Conversión**
 
-## Objetivos generales
-
-* Dominar el uso de funciones de una sola fila en Oracle (carácter, número, fecha).
-* Comprender y aplicar correctamente funciones de conversión (`TO_CHAR`, `TO_DATE`, `TO_NUMBER`) y *format models*.
-* Manejar adecuadamente valores `NULL` con `NVL`, `NVL2`, `NULLIF`, `COALESCE`.
-* Diferenciar tipos devueltos y anidar funciones sin perder el control del tipo resultante.
-* Aplicar aritmética de fechas y funciones de calendario (`ADD_MONTHS`, `NEXT_DAY`) considerando `NLS_TERRITORY`.
-* Entender el comportamiento de `YY` vs `RR` en conversiones de fecha.
-
-## Objetivos específicos
+## **Objetivos**
 
 * Identificar la categoría de cada función (carácter, numérica, fecha, conversión) y su tipo de retorno.
 * Formatear fechas y números con `TO_CHAR` usando *format models* comunes (`YYYY`, `RR`, `MON`, `DD`, `FM`, `999G999D00`, etc.).
@@ -18,11 +9,11 @@
 * Configurar la sesión (`NLS_TERRITORY`) para observar efectos en `NEXT_DAY` y nombres de día/mes.
 * Validar y explicar casos límite con `YY` y `RR` (p. ej., años 49/50/99/00).
 
-## Duración estimada
+## **Duración estimada**
 
 90–110 minutos.
 
-## Tabla de ayuda (conceptos y referencias)
+## **Tabla de Ayuda**
 
 > Sugerencia: abre cada referencia y tenla a la mano durante la práctica.
 
@@ -46,7 +37,9 @@
   *Conditional Expressions / NULL-related*
   [Single-Row-Functions](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Single-Row-Functions.html)
 
-## Objetivo visual
+<br/><br/>
+
+## **Objetivo Visual**
 
 Un mapa mental (texto) que el alumno pueda replicar en su cuaderno:
 
@@ -62,19 +55,19 @@ Dato de entrada ──► [Función] ──► Tipo devuelto
 
 **Regla de oro:** al *anidar*, valida el tipo que entra/sale de cada función.
 
----
+<br/><br/>
 
-## Instrucciones (Tareas y pasos detallados)
+## **Instrucciones**  
 
-### Tarea 0 — Preparación y verificación rápida (HR)
+### **Tarea 0. Preparación y verificación rápida (HR)**
 
 1. Conéctate a la BD como un usuario con acceso al esquema **HR**.
    `SELECT COUNT(*) FROM hr.employees;` (debe devolver filas > 0).
 2. Guarda tu *script de trabajo* como `P13_funciones.sql`.
 
----
+<br/><br/>
 
-### Tarea 1 — Funciones de carácter (repaso dirigido)
+### **Tarea 1. Funciones de carácter (repaso dirigido)**
 
 1. Ejecuta y explica brevemente qué hace cada expresión y su tipo devuelto:
 
@@ -89,9 +82,9 @@ Dato de entrada ──► [Función] ──► Tipo devuelto
    ```
 2. ¿`INSTR` devuelve `NUMBER` o `CHAR`? ¿Por qué?
 
----
+<br/><br/>
 
-### Tarea 2 — Funciones numéricas (control del tipo)
+### **Tarea 2. Funciones numéricas (control del tipo)**
 
 1. Practica con `salary` (NUMBER):
 
@@ -106,9 +99,9 @@ Dato de entrada ──► [Función] ──► Tipo devuelto
    ```
 2. Indica el *tipo devuelto* de cada columna calculada y si alguna puede ser `NULL`.
 
----
+<br/><br/>
 
-### Tarea 3 — Fechas y aritmética de fechas
+### **Tarea 3. Fechas y aritmética de fechas**
 
 1. Observa la fecha actual y realiza aritmética:
 
@@ -122,9 +115,9 @@ Dato de entrada ──► [Función] ──► Tipo devuelto
    ```
 2. Explica por qué `SYSDATE + 7` sigue siendo `DATE` y no `NUMBER`.
 
----
+<br/><br/>
 
-### Tarea 4 — `TO_CHAR` con *format models*
+### **Tarea 4. `TO_CHAR` con *format models***
 
 1. Formatea fecha y número:
 
@@ -137,9 +130,9 @@ Dato de entrada ──► [Función] ──► Tipo devuelto
    ```
 2. Cambia `NLS_DATE_LANGUAGE=Spanish` y observa abreviaturas de día/mes.
 
----
+<br/><br/>
 
-### Tarea 5 — `TO_DATE` / `TO_NUMBER` y `YY` vs `RR`
+### **Tarea 5. `TO_DATE` / `TO_NUMBER` y `YY` vs `RR`**
 
 1. Conversión con `YY`:
 
@@ -157,9 +150,9 @@ Dato de entrada ──► [Función] ──► Tipo devuelto
    ```
 3. **Explica**: ¿Cómo determina Oracle el siglo con `YY` vs `RR`? Anota tu conclusión.
 
----
+<br/><br/>
 
-### Tarea 6 — `NVL`, `NVL2`, `NULLIF`, `COALESCE` (manejo de NULL)
+### **Tarea 6. `NVL`, `NVL2`, `NULLIF`, `COALESCE` (manejo de NULL)**
 
 1. Crea ejemplos con posibles `NULL`:
 
@@ -178,9 +171,9 @@ Dato de entrada ──► [Función] ──► Tipo devuelto
    * a) Una expresión que devuelva `NULL` cuando `salary` y `NVL(salary,0)` sean iguales, y el `salary` en otro caso.
    * b) Una expresión que elija en orden: `commission_pct`, si `NULL` use `bonus` (supón columna `bonus`), y si también es `NULL` use `0`. *(Si no existe `bonus`, crea una CTE con datos de prueba.)*
 
----
+<br/><br/>
 
-### Tarea 7 — `ADD_MONTHS` + `NEXT_DAY` con `NLS_TERRITORY`
+### **Tarea 7. `ADD_MONTHS` + `NEXT_DAY` con `NLS_TERRITORY`**
 
 > **Clave para Preguntas 5/6**: Cambia `NLS_TERRITORY` y observa el *día de inicio de semana* y nombres de días.
 
@@ -206,9 +199,9 @@ Dato de entrada ──► [Función] ──► Tipo devuelto
    ```
 3. **Pregunta guía**: ¿Por qué a veces `NEXT_DAY` falla si el nombre del día no coincide con el idioma de la sesión? ¿Cómo lo solucionas?
 
----
+<br/><br/>
 
-### Tarea 8 — Anidamiento y control de tipo devuelto
+### **Tarea 8. Anidamiento y control de tipo devuelto**
 
 1. Valida tipos al anidar:
 
@@ -221,9 +214,9 @@ Dato de entrada ──► [Función] ──► Tipo devuelto
    ```
 2. Indica el tipo devuelto de cada expresión **en cada paso** (escribe tu traza breve).
 
----
+<br/><br/>
 
-### Tarea 9 — **Desafío - nivel de certificación** (10 *queries*, sin solución)
+### **Tarea 9. **Desafío**
 
 > Redacta sentencias y obtén el resultado correcto en tu sesión. Incluye el *query* y una nota explicando el razonamiento (1–2 líneas).
 
@@ -238,9 +231,9 @@ Dato de entrada ──► [Función] ──► Tipo devuelto
 9. Construye una cadena con `last_name` y `salary` con formato monetario local (usa `TO_CHAR` numérico y **`G`/`D`**).
 10. Muestra `COALESCE(commission_pct, bonus, 0)` con datos de prueba (usa una CTE si `bonus` no existe).
 
----
+<br/><br/>
 
-## Resultado esperado
+## **Resultado Esperado**
 
 Al finalizar, debes entregar:
 
@@ -257,10 +250,9 @@ Al finalizar, debes entregar:
   * Ejercicios con `NULLIF`/`COALESCE` (tarea 6).
   * Desafío (tarea 9): los 10 *queries* y su salida.
 
-**Criterios de logro**
 
-* Identificas correctamente **tipos devueltos** en expresiones anidadas.
-* Usas *format models* adecuados en `TO_CHAR`/`TO_DATE`/`TO_NUMBER`.
-* Manejas `NULL` correctamente con `NVL`/`NVL2`/`NULLIF`/`COALESCE` y justificas tu elección.
-* Demuestras comprensión del comportamiento de `YY` vs `RR`.
-* Evidencias el impacto de `NLS_TERRITORY` en `NEXT_DAY` y cómo controlarlo.
+La captura muestra correctamente el resultado esperado del desafío: la función
+COALESCE(commission_pct, bonus, 0) devuelve el primer valor no nulo entre la comisión, el bono o cero.
+En este caso, los empleados con commission_pct existente usan ese valor (0.4 y 0.3), mientras que si faltara, habría tomado bonus o, en su defecto, 0.
+
+![Resultado Esperado](../images/p1-3.png)

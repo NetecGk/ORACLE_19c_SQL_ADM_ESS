@@ -1,16 +1,8 @@
+# **Práctica 1.4 Agregación y Operadores de Conjuntos**
 
+<br/><br/>
 
-# **Práctica 1.4. Agregación y Set Operators**
-
-
-
-#### **Objetivo general**
-
-Al finalizar esta práctica, el participante será capaz de aplicar correctamente las funciones de grupo y los operadores de conjunto en Oracle SQL, utilizando el esquema HR, evitando errores de agrupamiento y eligiendo el operador adecuado según el contexto.
-
----
-
-#### **Objetivos específicos**
+## **Objetivos**
 
 * Usar funciones de grupo (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`) para resumir datos.
 * Aplicar `GROUP BY` y `HAVING` para generar y filtrar agrupaciones.
@@ -18,15 +10,15 @@ Al finalizar esta práctica, el participante será capaz de aplicar correctament
 * Seleccionar correctamente entre los operadores de conjunto `UNION`, `UNION ALL`, `INTERSECT` y `MINUS`.
 * Interpretar y prevenir el error `ORA-00979: not a GROUP BY expression`.
 
----
+<br/><br/>
 
-#### **Duración estimada**
+## **Duración estimada**
 
-⏱️ **70 minutos**
+**70 minutos**
 
----
+<br/><br/>
 
-#### **Tabla de ayuda**
+## **Tabla de Ayuda**
 
 | Concepto / Función                              | Descripción breve                                         | Referencia oficial                                                                                  |
 | ----------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -37,17 +29,17 @@ Al finalizar esta práctica, el participante será capaz de aplicar correctament
 | `UNION`, `UNION ALL`, `INTERSECT`, `MINUS`      | Combinan resultados de dos o más consultas.               | [Set Operators](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Queries.html)   |
 | `ORA-00979`                                     | Error al seleccionar columnas no agrupadas ni agregadas.  | [ORA-00979 Error](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/SELECT.html)  |
 
----
+<br/><br/>
 
-#### **Objetivo visual**
+## **Objetivo Visual**
 
 Comprender visualmente cómo se agrupan los datos dentro del esquema HR y cómo los resultados de diferentes consultas se pueden combinar, intersectar o restar utilizando operadores de conjunto.
 
----
+<br/><br/>
 
-#### **Instrucciones, tareas y pasos detallados**
+## **Instrucciones**
 
----
+<br/><br/>
 
 ### **Tarea 1. Funciones de grupo básicas**
 
@@ -62,7 +54,7 @@ Comprender visualmente cómo se agrupan los datos dentro del esquema HR y cómo 
    ```
 3. Agrega una condición `HAVING AVG(salary) > 7000` y observa qué departamentos cumplen el criterio.
 
----
+<br/><br/>
 
 ### **Tarea 2. Contando valores únicos y nulos**
 
@@ -75,7 +67,7 @@ Comprender visualmente cómo se agrupan los datos dentro del esquema HR y cómo 
    ```
 2. Reflexiona: ¿qué efecto tiene `DISTINCT` y cuándo puede cambiar el resultado?
 
----
+<br/><br/>
 
 ### **Tarea 3. Corrigiendo ORA-00979**
 
@@ -89,7 +81,7 @@ Comprender visualmente cómo se agrupan los datos dentro del esquema HR y cómo 
 2. Anota el error que Oracle devuelve.
 3. Corrige la consulta utilizando una función de grupo (`MIN`, `MAX`, `AVG`, etc.).
 
----
+<br/><br/>
 
 ### **Tarea 4. DISTINCT y concatenaciones**
 
@@ -102,7 +94,7 @@ Comprender visualmente cómo se agrupan los datos dentro del esquema HR y cómo 
 2. Explica qué sucede si algunos empleados tienen el mismo nombre y apellido.
 3. Verifica si la expresión puede devolver valores `NULL`.
 
----
+<br/><br/>
 
 ### **Tarea 5. Operadores de conjunto: UNION vs UNION ALL**
 
@@ -116,7 +108,7 @@ Comprender visualmente cómo se agrupan los datos dentro del esquema HR y cómo 
 2. Repite la consulta con `UNION ALL` y compara el número de filas.
 3. Explica cuál operador elimina duplicados y cuál no.
 
----
+<br/><br/>
 
 ### **Tarea 6. INTERSECT y MINUS**
 
@@ -135,7 +127,7 @@ Comprender visualmente cómo se agrupan los datos dentro del esquema HR y cómo 
    SELECT job_id FROM employees WHERE department_id = 80;
    ```
 
----
+<br/><br/>
 
 ### **Tarea 7. Precedencia de operadores**
 
@@ -151,7 +143,7 @@ Comprender visualmente cómo se agrupan los datos dentro del esquema HR y cómo 
 2. Determina qué se ejecuta primero (`INTERSECT` tiene mayor precedencia).
 3. Reescribe la consulta usando paréntesis para alterar el orden lógico.
 
----
+<br/><br/>
 
 ### **Tarea 8. Desafío – Nivel de certificación (10 enunciados)**
 
@@ -169,11 +161,10 @@ Cada uno tiene una única respuesta que requiere aplicar correctamente **funcion
 9. Calcula cuántos empleados no tienen comisión (`commission_pct`) nula.
 10. Muestra los departamentos cuyo salario promedio supere el salario promedio global.
 
-*(No incluyas las soluciones. Solo entrega las sentencias SQL al instructor.)*
 
----
+<br/><br/>
 
-#### **Resultado esperado**
+## **Resultado Esperado**
 
 El participante demuestra dominio en:
 
@@ -182,3 +173,9 @@ El participante demuestra dominio en:
 * Comprensión de la precedencia entre operadores (`INTERSECT` > `UNION`/`MINUS`).
 * Corrección de errores comunes como `ORA-00979`.
 * Capacidad de aplicar estos conceptos en consultas de nivel de certificación Oracle SQL (1Z0-082).
+
+
+La captura muestra correctamente el resultado esperado: una consulta con operadores de conjunto (INTERSECT) que devuelve un solo registro del departamento 80, con 34 empleados y un salario promedio de 8955.88235, evidenciando dominio de agrupaciones, HAVING, y precedencia entre operadores.
+
+
+![Resultado Esperado](../images/p1-4.png)
