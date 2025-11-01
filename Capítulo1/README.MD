@@ -6,6 +6,8 @@ Práctica del Capítulo 1. Fundamentos de SQL
 
 Comprobar el acceso y funcionamiento del entorno asignado para el curso, validando el inicio de sesión, la apertura de terminal, los permisos de usuario y las características básicas del sistema operativo Oracle Linux.
 
+<br/><br/>
+
 ## **[Práctica 1.2 SQL Básicos](Practica1_2.MD)**
 
 En esta práctica se ejecutarán consultas SQL básicas sobre el esquema HR. El participante aprenderá a aplicar filtros y operadores lógicos, utilizar variables de sustitución (`&` y `&&`) y manejar correctamente los valores `NULL` dentro de las consultas, comprendiendo su impacto en los resultados.

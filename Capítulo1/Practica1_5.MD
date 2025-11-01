@@ -215,7 +215,7 @@
 
 <br/><br/>
 
-### **Tarea 9. “Desafíos”**
+### **Tarea 9. Desafíos**
 
 Diseña **una sola consulta** que muestre:
 

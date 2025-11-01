@@ -203,7 +203,7 @@ El diagrama representa la estructura de tablas relacionadas con la gestión de e
 
 <br/><br/>
 
-### **Tarea 8. Desafío de consulta – Nivel certificación**
+### **Tarea 8. Desafíos**
 
 Ejecuta las siguientes 10 consultas utilizando el esquema **HR**.
 No se muestran las soluciones; analiza el resultado esperado y valida tus consultas con base en la sintaxis y comportamiento de Oracle SQL.

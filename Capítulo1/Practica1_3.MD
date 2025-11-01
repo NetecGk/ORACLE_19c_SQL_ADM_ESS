@@ -67,7 +67,7 @@ Dato de entrada ──► [Función] ──► Tipo devuelto
 
 <br/><br/>
 
-### **Tarea 1. Funciones de carácter (repaso dirigido)**
+### **Tarea 1. Funciones de carácter**
 
 1. Ejecuta y explica brevemente qué hace cada expresión y su tipo devuelto:
 
@@ -84,7 +84,7 @@ Dato de entrada ──► [Función] ──► Tipo devuelto
 
 <br/><br/>
 
-### **Tarea 2. Funciones numéricas (control del tipo)**
+### **Tarea 2. Funciones numéricas**
 
 1. Practica con `salary` (NUMBER):
 
@@ -152,7 +152,7 @@ Dato de entrada ──► [Función] ──► Tipo devuelto
 
 <br/><br/>
 
-### **Tarea 6. `NVL`, `NVL2`, `NULLIF`, `COALESCE` (manejo de NULL)**
+### **Tarea 6. `NVL`, `NVL2`, `NULLIF`, `COALESCE`**
 
 1. Crea ejemplos con posibles `NULL`:
 
@@ -216,7 +216,7 @@ Dato de entrada ──► [Función] ──► Tipo devuelto
 
 <br/><br/>
 
-### **Tarea 9. **Desafío**
+### **Tarea 9. **Desafíos**
 
 > Redacta sentencias y obtén el resultado correcto en tu sesión. Incluye el *query* y una nota explicando el razonamiento (1–2 líneas).
 

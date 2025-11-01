@@ -154,7 +154,7 @@ Representar mentalmente la diferencia entre:
 <br/><br/>
 
 
-### **Tarea 8. Desafío – Nivel de certificación**
+### **Tarea 8. Desafíos**
 
 A partir del esquema **HR**, resuelve las siguientes situaciones utilizando el tipo de subquery y/o predicado que consideres más adecuado.
 

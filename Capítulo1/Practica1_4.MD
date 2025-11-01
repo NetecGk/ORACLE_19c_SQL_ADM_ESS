@@ -145,7 +145,7 @@ Comprender visualmente cómo se agrupan los datos dentro del esquema HR y cómo 
 
 <br/><br/>
 
-### **Tarea 8. Desafío – Nivel de certificación (10 enunciados)**
+### **Tarea 8. Desafíos**
 
 Responde a los siguientes **10 enunciados** escribiendo la sentencia SQL correcta sobre el esquema **HR**.
 Cada uno tiene una única respuesta que requiere aplicar correctamente **funciones de grupo**, **cláusulas de agregación** o **set operators**.
