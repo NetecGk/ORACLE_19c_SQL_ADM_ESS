@@ -31,12 +31,6 @@
 
 <br/><br/>
 
-## **Objetivo Visual**
-
-Comprender visualmente cómo se agrupan los datos dentro del esquema HR y cómo los resultados de diferentes consultas se pueden combinar, intersectar o restar utilizando operadores de conjunto.
-
-<br/><br/>
-
 ## **Instrucciones**
 
 <br/><br/>
