@@ -24,25 +24,12 @@
 
 | Concepto            | Descripción                                                          | Referencia oficial                                                                                                                                                      |
 | ------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Subquery            | Consulta anidada dentro de otra sentencia SQL.                       | [Oracle SQL Language Reference → Subqueries](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/SELECT.html#GUID-4B2C6F5A-8EB3-4D7F-B6CE-27D729A3D4D7) |
-| Correlated Subquery | Subconsulta que depende de valores de la consulta principal.         | [Correlated Subqueries](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Subqueries.html#GUID-2350A2A7-ACBE-4F03-85AC-32E97306C58A)                  |
-| IN / NOT IN         | Evalúan pertenencia de un valor en una lista o conjunto.             | SQL Language Reference → Comparison Conditions                                                                                                                          |
-| EXISTS / NOT EXISTS | Verifican existencia o ausencia de filas devueltas por una subquery. | SQL Language Reference → EXISTS Condition                                                                                                                               |
-| ANY / ALL           | Compara con algún o todos los valores devueltos por una subquery.    | SQL Language Reference → Quantified Comparison Conditions                                                                                                               |
-| Scalar Subquery     | Devuelve un solo valor (una columna y una fila).                     | SQL Language Reference → Scalar Subquery Expressions                                                                                                                    |
-
-<br/><br/>
-
-
-## **Objetivo Visual**
-
-Representar mentalmente la diferencia entre:
-
-* Subquery **interna** (se ejecuta antes y su resultado alimenta la principal)
-* Subquery **correlacionada** (se ejecuta **por cada fila** de la consulta externa)
-* Uso de predicados (`IN`, `EXISTS`, `ANY`, `ALL`) según el tipo de comparación.
-
-*(Sugerencia visual: diagrama con dos cajas —consulta principal y subconsulta— conectadas por una flecha que indica dependencia o independencia de datos.)*
+| Subquery            | Consulta anidada dentro de otra sentencia SQL.                       | [Oracle SQL Language Reference → Subqueries](https://docs.oracle.com/en/database/other-databases/timesten/22.1/sql-reference/subqueries.html) |
+| Correlated Subquery | Subconsulta que depende de valores de la consulta principal.         | [Correlated Subqueries](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/SELECT.html#GUID-CFA006CA-6FF1-4972-821E-6996142A51C6__I2066912)                  |
+| IN / NOT IN         | Evalúan pertenencia de un valor en una lista o conjunto.             | [IN NOT IN](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/IN-Condition.html) Conditions                                                                                                                          |
+| EXISTS / NOT EXISTS | Verifican existencia o ausencia de filas devueltas por una subquery. | [EXISTS](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/EXISTS-Condition.html) Condition                                                                                                                               |
+| ANY / ALL           | Compara con algún o todos los valores devueltos por una subquery.    | [Quantified Comparison Conditions](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Comparison-Conditions.html#GUID-72CA75A4-AE94-471E-993F-20B969DB933F)                                                                                                              |
+| Scalar Subquery     | Devuelve un solo valor (una columna y una fila).                     | [Scalar Subquery Expressions](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Scalar-Subquery-Expressions.html)                                                                                                                 |
 
 <br/><br/>
 

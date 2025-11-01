@@ -23,11 +23,11 @@
 | Concepto / Función                              | Descripción breve                                         | Referencia oficial                                                                                  |
 | ----------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | `COUNT(*)`, `COUNT(col)`, `COUNT(DISTINCT col)` | Cuenta filas totales, valores no nulos o valores únicos.  | [COUNT Function](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/COUNT.html)    |
-| `GROUP BY`                                      | Agrupa los resultados según una o más columnas.           | [GROUP BY Clause](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/SELECT.html)  |
-| `HAVING`                                        | Filtra grupos resultantes de una agregación.              | [HAVING Clause](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/HAVING.html)    |
+| `GROUP BY`                                      | Agrupa los resultados según una o más columnas.           | [GROUP BY Clause](https://docs.oracle.com/javadb/10.8.3.0/ref/rrefsqlj32654.html)  |
+| `HAVING`                                        | Filtra grupos resultantes de una agregación.              | [HAVING Clause](https://docs.oracle.com/javadb/10.10.1.2/ref/rrefsqlj14854.html)    |
 | `DISTINCT` / `ALL`                              | Controla duplicados en funciones o resultados combinados. | [DISTINCT Keyword](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/SELECT.html) |
-| `UNION`, `UNION ALL`, `INTERSECT`, `MINUS`      | Combinan resultados de dos o más consultas.               | [Set Operators](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Queries.html)   |
-| `ORA-00979`                                     | Error al seleccionar columnas no agrupadas ni agregadas.  | [ORA-00979 Error](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/SELECT.html)  |
+| `UNION`, `UNION ALL`, `INTERSECT`, `MINUS`      | Combinan resultados de dos o más consultas.               | [Set Operators](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/The-UNION-ALL-INTERSECT-MINUS-Operators.html)   |
+| `ORA-00979`                                     | Error al seleccionar columnas no agrupadas ni agregadas.  | [ORA-00979 Error](https://docs.oracle.com/en/error-help/db/ora-00979/?r=26ai)  |
 
 <br/><br/>
 

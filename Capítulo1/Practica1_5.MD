@@ -19,7 +19,7 @@
 
 ## **Tabla de Ayuda**
 
-| Concepto                | Descripción breve                                                         | Sintaxis base                               | Ejemplo HR (resumen)                                           |
+| Concepto                | Descripción breve                                                         | Sintaxis base                               | Ejemplo HR                                            |
 | ----------------------- | ------------------------------------------------------------------------- | ------------------------------------------- | -------------------------------------------------------------- |
 | Equijoin (`=`)          | Une filas por igualdad de claves.                                         | `... FROM A a JOIN B b ON a.k=b.k`          | `employees` ↔ `departments` por `department_id`.               |
 | `NATURAL JOIN`          | Une por todas las columnas **con el mismo nombre** en ambas tablas.       | `A NATURAL JOIN B`                          | Si ambas tienen `department_id`, se une por esa(s) columna(s). |
@@ -29,6 +29,8 @@
 | Producto cartesiano     | Todas las combinaciones; **aparece si no hay condición**.                 | `A CROSS JOIN B` o `FROM A,B` sin condición | 107 empleados × 27 deptos = 2889 filas (ejemplo).              |
 | Self join               | Una tabla se une consigo misma; **requiere aliases**.                     | `A x JOIN A y ON ...`                       | `employees` (empleado) ↔ `employees` (manager).                |
 
+<br/><br/>
+
 > Recordatorio de uso:
 >
 > * **USING** solo se permite si el nombre de la(s) columna(s) coincide.
@@ -37,11 +39,22 @@
 
 <br/><br/>
 
+
+ | Operador             | Descripción                                                                       | Comportamiento con duplicados |
+| -------------------- | --------------------------------------------------------------------------------- | ----------------------------- |
+| **UNION**            | Combina los resultados de dos consultas y elimina duplicados (resultado único).   | Elimina duplicados.           |
+| **UNION ALL**        | Combina los resultados de dos consultas sin eliminar duplicados.                  | Mantiene duplicados.          |
+| **INTERSECT**        | Devuelve las filas que aparecen en **ambas consultas**.                           | Elimina duplicados.           |
+| **MINUS** *(Oracle)* | Devuelve las filas que aparecen en la **primera consulta** pero no en la segunda. | Elimina duplicados.           | 
+
+<br/><br/>
+
+
 ## **Objetivo Visual**
 
-   Trabajarás con estas relaciones del esquema HR:
-   `employees.department_id → departments.department_id → locations.location_id → countries.country_id → regions.region_id`
-   y la autorrelación de `employees.manager_id → employees.employee_id`.
+Operadores de Conjuntos, son útiles para combinar resultados de consultas independientes
+
+ ![Sets Operators](../images/sets.png)
 
 ## **Instrucciones**
 

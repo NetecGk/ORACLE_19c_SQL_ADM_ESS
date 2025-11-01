@@ -25,7 +25,7 @@
   [Numeric-Functions](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Single-Row-Functions.html#GUID-AC0E8A99-5097-4147-8295-C88EAC5AA362)
 * **Funciones de fecha**: `ADD_MONTHS`, `NEXT_DAY`, `LAST_DAY`, `MONTHS_BETWEEN`, `SYSDATE`.
   *Datetime Functions*
-  [Datetime-Functions](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Datetime-Functions.html)
+  [Datetime-Functions](https://docs.oracle.com/en/database/oracle/oracle-database/19/lnoci/oci-date-datetime-and-interval-functions.html)
 * **Conversión**: `TO_CHAR` (date/number), `TO_DATE`, `TO_NUMBER`.
   *Conversion Functions*
   [Conversion-Functions](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Single-Row-Functions.html#GUID-0E5115DD-F906-4F04-BB70-DF62DD4BBF91)
