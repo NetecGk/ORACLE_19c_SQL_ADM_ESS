@@ -1,6 +1,6 @@
 # **Práctica 5.4 Eliminación de Tablespaces**
 
-## **Objetivos específicos**
+## **Objetivos**
 
 1. Identificar los efectos de eliminar un tablespace y su contenido.
 2. Ejecutar correctamente la instrucción `DROP TABLESPACE` con las opciones adecuadas.

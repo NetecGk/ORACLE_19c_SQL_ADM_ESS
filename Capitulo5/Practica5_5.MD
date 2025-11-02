@@ -70,7 +70,7 @@ El siguiente esquema muestra la relación entre las transacciones activas, el ta
 1. Dirígete al directorio donde se encuentran los scripts:
 
    ```bash
-   $ cd $HOME/codes/08_controlundoredo
+   $ cd $HOME/codes/05_almacenamiento
    ```
 2. Ejecuta el script para visualizar el tamaño actual del tablespace:
 
@@ -89,6 +89,7 @@ El siguiente esquema muestra la relación entre las transacciones activas, el ta
    $ sqlplus / as sysdba @p04_monitoreo.sql
    ```
 2. Determina el momento del día en el que se generan más bloques UNDO activos.
+
 3. Anota las horas de mayor actividad y analiza la relación con el volumen de transacciones.
 
 <br/><br/>
@@ -100,11 +101,13 @@ El siguiente esquema muestra la relación entre las transacciones activas, el ta
    ```
    24 horas = 24 × 60 × 60 = 86400
    ```
+
 2. Modifica la retención del UNDO:
 
    ```sql
    SQL> ALTER SYSTEM SET UNDO_RETENTION = 86400;
    ```
+   
 3. Verifica el cambio con:
 
    ```sql

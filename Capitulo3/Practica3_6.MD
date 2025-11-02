@@ -1,7 +1,7 @@
 # **Práctica 3.6 – Modificación de Parámetros**
 
 
-## **Objetivos específicos**
+## **Objetivos**
 
 * Identificar los tipos de parámetros de inicialización (estáticos y dinámicos).
 * Consultar valores actuales mediante vistas del diccionario de datos.

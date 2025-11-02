@@ -1,7 +1,7 @@
 # **Práctica 5.2 Creación y Gestión de Tablespaces en Oracle 19c**
 
 
-## **Objetivos específicos**
+## **Objetivos**
 
 * Crear tablespaces en Oracle con diferentes tipos de administración de extensiones.
 * Analizar errores comunes al crear tablespaces y comprender sus causas.
@@ -131,21 +131,74 @@ El siguiente diagrama representa la relación entre los **tablespaces**, sus **d
 3. Ejecuta los scripts desde las siguientes cuentas:
 
    ```bash
-   $ cd $HOME/codes/07_almacenamiento
+   $ cd $HOME/codes/05_almacenamiento
    $ sqlplus system/Oracle1 @p02_espacio.sql
    $ sqlplus hr/Oracle1 @p02.sql
    ```
+4. Puedes tomar el código de p02_espacio.sql del bloque siguiente:
+
+   ```sql
+   --
+   -- Oracle 19c SQL & Admin
+   -- p02_espacio.sql
+   -- Espacio usado por los tablespaces
+   --
+   col "Tablespace" for a22
+   col "Used MB" for 99,999,999
+   col "Free MB" for 99,999,999
+   col "Total MB" for 99,999,999
+
+   select df.tablespace_name "Tablespace", totalusedspace "Used MB", (df.totalspace - tu.totalusedspace) "Free MB",
+   df.totalspace "Total MB", round(100 * ( (df.totalspace - tu.totalusedspace)/ df.totalspace)) "Pct. Free" from
+   (select tablespace_name, round(sum(bytes) / 1048576) TotalSpace from dba_data_files group by tablespace_name) df, (select round(sum(bytes)/(1024*1024)) totalusedspace, tablespace_name from dba_segments group by tablespace_name) tu where df.tablespace_name = tu.tablespace_name ;
+   quit
+   ```
+
 
 <br/><br/>
 
 
 ### **Tarea 6. Verificación del llenado y alertas**
 
+0. Toma el código de p02.sql del siguiente bloque
+
+   ```sql
+   --
+   --  Curso Oracle 19c SQL & ADM
+   --
+   -- DROP TABLE TEMPO;
+
+   SET echo ON
+   
+   CREATE TABLE TEMPO
+   (col CHAR(1000)
+   ) TABLESPACE tbs_02;
+
+   INSERT INTO TEMPO VALUES ('netec');
+   INSERT INTO TEMPO SELECT * FROM TEMPO;
+   INSERT INTO TEMPO SELECT * FROM TEMPO;
+   INSERT INTO TEMPO SELECT * FROM TEMPO;
+   INSERT INTO TEMPO SELECT * FROM TEMPO;
+   INSERT INTO TEMPO SELECT * FROM TEMPO;
+   INSERT INTO TEMPO SELECT * FROM TEMPO;
+   INSERT INTO TEMPO SELECT * FROM TEMPO;
+   INSERT INTO TEMPO SELECT * FROM TEMPO;
+   INSERT INTO TEMPO SELECT * FROM TEMPO;
+   INSERT INTO TEMPO SELECT * FROM TEMPO;
+   INSERT INTO TEMPO SELECT * FROM TEMPO;
+   INSERT INTO TEMPO SELECT * FROM TEMPO;
+   INSERT INTO TEMPO SELECT * FROM TEMPO;
+   INSERT INTO TEMPO SELECT * FROM TEMPO;
+   COMMIT;
+   quit
+   ```
+
 1. Repite la ejecución del script `p02.sql` hasta recibir el error:
 
    ```
    ORA-01653: Unable to extend table HR:TEMPO
    ```
+
 2. Abre la utilidad de diagnóstico para visualizar las alertas:
 
    ```bash
@@ -164,12 +217,15 @@ El siguiente diagrama representa la relación entre los **tablespaces**, sus **d
    SQL> ALTER TABLESPACE tbs_02 
         ADD DATAFILE '/u02/oradata/orcl/new_datafile.dbf' SIZE 150M;
    ```
+
 2. Vuelve a insertar datos y verifica que el error haya desaparecido.
+
 3. Alternativamente, amplía un datafile existente:
 
    ```sql
    SQL> ALTER DATABASE DATAFILE '/u02/oradata/orcl/tbs_02.dbf' RESIZE 150M;
    ```
+   
 4. Reflexiona: ¿Qué ventaja ofrece el parámetro `AUTOEXTEND ON` para prevenir estos errores?
 
 <br/><br/>

@@ -66,10 +66,33 @@ El siguiente diagrama representa el flujo lógico del proceso de exportación e 
 
 ### **Tarea 2. Limpieza y preparación**
 
+
 1. Ejecuta el script de preparación:
 
    ```bash
-   $ sqlplus / as sysdba @$HOME/codes/13_movimiento/p01.sql
+   $ sqlplus / as sysdba @$HOME/codes/07_movimiento/p01.sql
+   ```
+
+2. En caso de no tener el archivo p01.sql, puedes tomar el código del siguiente bloque
+   
+   ```sql
+   --
+   -- Curso Oracle 19c SQL & ADM
+   --
+
+   drop user userdp cascade;
+
+   drop tablespace ts_userdp including contents and datafiles;
+
+   create tablespace ts_userdp datafile '/u02/oradata/orcl/df_userdp' size 250m;
+
+   create user userdp identified by Oracle1 account unlock default tablespace ts_userdp;
+
+   grant create session, create table, unlimited tablespace to userdp;
+
+   grant exp_full_database to userdp;
+
+   quit
    ```
 2. Elimina posibles archivos previos:
 

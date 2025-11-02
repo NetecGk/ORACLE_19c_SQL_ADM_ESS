@@ -49,8 +49,39 @@ El siguiente esquema muestra el flujo general de una carga de datos con **SQL*Lo
 
    ```bash
    $ . oraenv  # orcl
-   $ cd $HOME/codes/13_movimientos
+   $ cd $HOME/codes/07_movimientos
    $ sqlplus / as sysdba @p02.sql
+   ```
+
+2. Si no tienes el archivo p02.sql, puedes tomar el código del siguiente bloque:
+
+   ```sql
+   --
+   -- Curso Oracle 19c SQL & ADM
+   --
+
+   drop user userloader cascade;
+
+   drop tablespace ts_loader including contents and datafiles;
+
+   create tablespace ts_loader datafile '/u02/oradata/orcl/df_loader' size 20m;
+
+   create user userloader identified by Oracle1 account unlock default tablespace ts_loader;
+
+   grant create session, create table, unlimited tablespace to userloader;
+
+   conn userloader/Oracle1
+
+   create table productos (
+      sku number primary key,
+      region char(3),
+      descripcion varchar2(80),
+      tipo varchar2(20)
+   );
+
+   desc userloader.productos
+
+   quit
    ```
 
 <br/><br/>
@@ -60,7 +91,7 @@ El siguiente esquema muestra el flujo general de una carga de datos con **SQL*Lo
 1. Localiza y analiza el archivo `productos.dat`:
 
    ```bash
-   $ cd $HOME/codes/13_movimientos
+   $ cd $HOME/codes/07_movimientos
    $ file productos.dat
    $ cat productos.dat
    ```
@@ -84,7 +115,7 @@ El siguiente esquema muestra el flujo general de una carga de datos con **SQL*Lo
 1. Revisa los archivos de bitácora generados:
 
    ```bash
-   $ cd $HOME/codes/13_movimientos
+   $ cd $HOME/codes/07_movimientos
    $ file productos.log
    $ more productos.log
    ```
@@ -104,7 +135,7 @@ El siguiente esquema muestra el flujo general de una carga de datos con **SQL*Lo
 1. Como DBA, ejecuta el siguiente script de preparación:
 
    ```bash
-   $ cd $HOME/codes/13_movimientos
+   $ cd $HOME/codes/07_movimientos
    $ sqlplus / as sysdba @p03.sql
    ```
 
@@ -115,7 +146,7 @@ El siguiente esquema muestra el flujo general de una carga de datos con **SQL*Lo
 1. Examina el archivo `datos.dat`:
 
    ```bash
-   $ cd $HOME/codes/13_movimientos
+   $ cd $HOME/codes/07_movimientos
    $ ls -l datos.dat
    $ file datos.dat
    $ wc -l datos.dat  # Número de registros a insertar
@@ -138,7 +169,7 @@ El siguiente esquema muestra el flujo general de una carga de datos con **SQL*Lo
 1. Revisa la bitácora generada:
 
    ```bash
-   $ cd $HOME/codes/13_movimientos
+   $ cd $HOME/codes/07_movimientos
    $ more labdatos.log
    ```
 

@@ -1,7 +1,7 @@
 # **Práctica 5.3 Extensión del Espacio de la Base de Datos**
 
 
-## **Objetivos específicos**
+## **Objetivos**
 
 1. Identificar los datafiles y su relación con los tablespaces.
 2. Consultar el espacio libre y total disponible en cada tablespace.

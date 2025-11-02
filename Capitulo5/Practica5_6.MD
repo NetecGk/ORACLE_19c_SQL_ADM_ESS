@@ -1,6 +1,6 @@
 # **Práctica 5.6 Archivos de Control en Oracle Database**
 
-## **Objetivos específicos**
+## **Objetivos**
 
 * Comprender el propósito del archivo de control dentro de la arquitectura de Oracle Database.
 * Consultar el parámetro de inicialización `CONTROL_FILES` para ubicar los archivos asociados.

@@ -1,6 +1,6 @@
 # **Práctica 4.2 Creación y Gestión de Roles**
 
-## **Objetivos específicos**
+## **Objetivos**
 
 * Comprender la diferencia entre privilegios del sistema y roles.
 * Identificar los usuarios o roles con privilegios para crear nuevos roles.

@@ -1,7 +1,7 @@
 # **Práctica 3.3 Inicio y Cierre de Bases de Datos**
 
 
-## **Objetivos específicos**
+## **Objetivos**
 
 * Identificar los distintos estados de una base de datos Oracle (MOUNT, OPEN, NOMOUNT).
 * Aplicar los comandos `STARTUP` y `SHUTDOWN` en sus diferentes modalidades.

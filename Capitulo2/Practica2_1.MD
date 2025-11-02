@@ -1,7 +1,7 @@
 **Práctica 2.1 Usando DML para gestionar datos y transacciones**
 
 
-## Objetivos específicos
+## Objetivos
 
 * Crear una tabla de práctica y comprobar su estructura.
 * Insertar filas con y sin lista de columnas.
@@ -257,7 +257,7 @@
 
 <br/><br/>
 
-### **Tarea 8. “Desafío”**
+### **Tarea 8. Desafío**
 
 * Modifica `ins_emp_dml.sql` para **generar `email` automáticamente** concatenando:
 

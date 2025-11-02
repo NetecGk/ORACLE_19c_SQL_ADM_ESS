@@ -2,7 +2,7 @@
 
 <br/><br/>
 
-## **Objetivos específicos**
+## **Objetivos**
 
 * Identificar la ubicación y estructura de los archivos de parámetros en Oracle Database.
 * Generar copias del SPFILE utilizando comandos SQL*Plus.
