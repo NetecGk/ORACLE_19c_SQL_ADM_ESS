@@ -1,4 +1,4 @@
-# **Práctica 6.2 – Creación de un nuevo LISTENER**
+# **Práctica 6.2 Creación de un nuevo LISTENER**
 
 ## **Objetivos**
 

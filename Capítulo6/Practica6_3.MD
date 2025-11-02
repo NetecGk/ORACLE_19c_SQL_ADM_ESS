@@ -1,4 +1,4 @@
-# **Práctica 6.3 – Uso del Nuevo Listener**
+# **Práctica 6.3 Uso del Nuevo Listener**
 
 
 ## **Objetivos**

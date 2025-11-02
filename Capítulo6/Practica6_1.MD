@@ -1,4 +1,4 @@
-# **Práctica 6.1 – Creación de Network Service**
+# **Práctica 6.1 Creación de Network Service**
 
 ## **Objetivos**
 
