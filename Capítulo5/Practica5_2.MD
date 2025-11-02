@@ -1,4 +1,4 @@
-# **Práctica 5.2 – Creación y Gestión de Tablespaces en Oracle 19c**
+# **Práctica 5.2 Creación y Gestión de Tablespaces en Oracle 19c**
 
 
 ## **Objetivos específicos**

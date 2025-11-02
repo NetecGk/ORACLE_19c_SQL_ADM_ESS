@@ -1,4 +1,4 @@
-# **Práctica 5.4 – Eliminación de Tablespaces**
+# **Práctica 5.4 Eliminación de Tablespaces**
 
 ## **Objetivos específicos**
 

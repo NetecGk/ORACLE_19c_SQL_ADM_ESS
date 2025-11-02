@@ -1,4 +1,4 @@
-# **Práctica 5.1 – Visualización del Espacio de Almacenamiento**
+# **Práctica 5.1 Visualización del Espacio de Almacenamiento**
 
 <br/><br/>
 

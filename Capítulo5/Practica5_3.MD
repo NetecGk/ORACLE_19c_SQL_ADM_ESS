@@ -1,4 +1,4 @@
-# **Práctica 5.3 – Extensión del Espacio de la Base de Datos**
+# **Práctica 5.3 Extensión del Espacio de la Base de Datos**
 
 
 ## **Objetivos específicos**
