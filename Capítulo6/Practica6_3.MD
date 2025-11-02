@@ -127,7 +127,7 @@ El siguiente diagrama representa la comunicación entre la instancia **ORCL** y 
 
 <br/><br/>
 
-### **Desafío**
+### **Tarea 6. Desafío**
 
 Crea un **script SQL** llamado `config_listener.sql` que automatice el proceso de:
 
