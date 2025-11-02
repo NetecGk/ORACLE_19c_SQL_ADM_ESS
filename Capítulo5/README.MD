@@ -36,7 +36,7 @@ En esta práctica aprenderás a **gestionar el espacio de UNDO en Oracle Databas
 
 <br/><br/>
 
-# [**Práctica 5.6 Archivos de Control en Oracle Database 19c**](Practica5_6.MD)
+# [**Práctica 5.6 Archivos de Control en Oracle Database**](Practica5_6.MD)
 
 En esta práctica aprenderás a **identificar la función y el contenido del archivo de control (Control File)** en Oracle Database, analizar sus componentes mediante vistas dinámicas, y generar respaldos tanto en formato binario como en texto para fines administrativos y de recuperación del sistema.
 
