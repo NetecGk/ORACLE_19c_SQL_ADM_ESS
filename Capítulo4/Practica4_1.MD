@@ -38,7 +38,7 @@
 
 El siguiente diagrama representa la relación entre **usuarios**, **roles**, **privilegios** y **objetos** dentro del esquema de seguridad de Oracle Database:
 
-![diagrama1](../images/p4-2.png.png)
+![diagrama1](../images/p4-2.png)
 
 <br/><br/>
 
