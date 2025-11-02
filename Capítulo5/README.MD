@@ -43,6 +43,6 @@ En esta práctica aprenderás a **identificar la función y el contenido del arc
 
 <br/><br/>
 
-# [**Práctica 5.7 – Redo Logs (Grupos y Miembros)**](Practica5_7.MD)
+# [**Práctica 5.7 Redo Logs (Grupos y Miembros)**](Practica5_7.MD)
 
 Identificar, verificar y administrar los **grupos y miembros del Redo Log online** en Oracle 19c, agregando nuevos grupos/miem
