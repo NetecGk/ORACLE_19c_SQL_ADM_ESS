@@ -158,14 +158,14 @@ Investiga qué usuarios poseen los siguientes privilegios directos:
 
 <br/><br/>
 
-### **Tarea 8. Desafío – Nivel de Certificación**
+### **Tarea 8. Desafío**
 
 Crea un usuario llamado **AUDITOR** con contraseña **audit2024**, asigna una **cuota ilimitada** en el tablespace **USUARIOS**, y otórgale los privilegios necesarios para crear tablas y conectarse al sistema.
 Valida la correcta creación, conexión y verificación de privilegios mediante consultas a las vistas `DBA_USERS` y `DBA_SYS_PRIVS`.
 
 <br/><br/>
 
-## **Resultado esperado**
+## **Resultado Esperado**
 
 * Usuario **GABRIEL** creado exitosamente y conectado tras asignar el privilegio `CREATE SESSION`.
 * Salida esperada al ejecutar `SHOW USER`:

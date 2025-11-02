@@ -117,7 +117,7 @@ El siguiente diagrama ilustra la relación entre **usuarios**, **roles** y **pri
 
 <br/><br/>
 
-### **Tarea 6. Desafío – Nivel de certificación**
+### **Tarea 6. Desafío**
 
 Diseña un nuevo rol llamado **OPERACIONES** que contenga privilegios suficientes para:
 
@@ -129,7 +129,7 @@ Valida mediante consultas a `DBA_ROLE_PRIVS` y `DBA_SYS_PRIVS` que **IAN** posee
 
 <br/><br/>
 
-## **Resultado esperado**
+## **Resultado Esperado**
 
 * El rol **NETEC** se ha creado correctamente y contiene los privilegios `CREATE SESSION`, `CREATE USER` y `CREATE ROLE`.
 * El usuario **GABRIEL** puede iniciar sesión y administrar usuarios únicamente a través del rol asignado.

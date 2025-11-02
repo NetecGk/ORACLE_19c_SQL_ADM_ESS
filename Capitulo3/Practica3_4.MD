@@ -174,7 +174,7 @@ El diagrama ilustra la relación entre **SGA_TARGET** (memoria autoajustada), su
 
 <br/><br/>
 
-### **Tarea 9. Desafío – nivel de certificación**
+### **Tarea 9. Desafío**
 
 Produce **un solo script** que:
 

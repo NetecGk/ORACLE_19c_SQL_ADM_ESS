@@ -134,7 +134,7 @@ Crea un **script SQL** llamado `reporte_db.sql` que:
 
 <br/><br/>
 
-## **Resultado esperado**
+## **Resultado Esperado**
 
 Al finalizar la práctica deberás obtener un reporte en pantalla (y opcionalmente en archivo) similar al siguiente:
 

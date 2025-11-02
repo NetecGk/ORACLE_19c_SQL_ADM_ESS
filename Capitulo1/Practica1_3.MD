@@ -215,7 +215,7 @@
 
 <br/><br/>
 
-### **Tarea 9. **Desafíos**
+### **Tarea 9. Desafíos**
 
 > Redacta sentencias y obtén el resultado correcto en tu sesión. Incluye el *query* y una nota explicando el razonamiento (1–2 líneas).
 

@@ -113,7 +113,7 @@ El siguiente esquema muestra la relación entre las transacciones activas, el ta
 
 <br/><br/>
 
-### **Desafío **
+### **Tarea 6. Desafío**
 
 Realiza un **experimento de recuperación con Flashback Query**:
 
@@ -127,7 +127,7 @@ Realiza un **experimento de recuperación con Flashback Query**:
 
 <br/><br/>
 
-## **Resultado esperado**
+## **Resultado Esperado**
 
 * Se muestran correctamente los parámetros de UNDO configurados.
 * La base de datos queda configurada con una **retención de 24 horas** (`UNDO_RETENTION=86400`).

@@ -129,7 +129,7 @@ El siguiente diagrama ilustra la relación entre los archivos de parámetros en 
 
 <br/><br/>
 
-### **Tarea 6. Desafío – Nivel de certificación**
+### **Tarea 6. Desafío**
 
 Diseña un procedimiento para crear un **nuevo SPFILE** basado en el archivo **orclbackup.ora**, y úsalo para iniciar la base de datos.
 

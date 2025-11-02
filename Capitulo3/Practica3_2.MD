@@ -121,7 +121,7 @@
 
 <br/><br/>
 
-### **Tarea 5. Desafío – Nivel de certificación**
+### **Tarea 5. Desafío**
 
 Ejecuta una sola consulta SQL que muestre **la instancia**, **el estado de la base de datos**, **el host donde corre Oracle** y **la versión de la instancia**.
 *(Usa una combinación adecuada de columnas desde `v$instance` o una subconsulta si lo consideras necesario).*

@@ -167,7 +167,7 @@ ALTER DATABASE ADD LOGFILE MEMBER '/u02/oradata/orcl/nlog03.log' TO GROUP 4;
 
 <br/><br/>
 
-### **Tarea 9. “Desafío”**
+### **Tarea 9. Desafío**
 
 Diseña un script (un solo bloque de ejecución) que:
 
@@ -183,7 +183,7 @@ Diseña un script (un solo bloque de ejecución) que:
 * Para contar miembros por grupo: `COUNT(*) OVER (PARTITION BY group#)` en una CTE.
 
 
-## Resultado esperado
+## **Resultado Esperado**
 
 Al finalizar, deberás tener:
 

@@ -105,7 +105,7 @@ Verifica la conexión desde SQL*Plus y documenta los archivos modificados y las 
 
 <br/><br/>
 
-## **Resultado esperado**
+## **Resultado Esperado**
 
 * Archivos `tnsnames.ora` y `listener.ora` respaldados y actualizados correctamente.
 * Nuevo alias de red (`praorcl`) configurado y probado exitosamente.

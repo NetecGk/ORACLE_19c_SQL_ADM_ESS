@@ -168,7 +168,7 @@ Ejecuta la carga y analiza la bitácora resultante.
 
 <br/><br/>
 
-## **Resultado esperado**
+## **Resultado Esperado**
 
 * Se ejecutan correctamente dos cargas de datos:
 

@@ -101,7 +101,7 @@ Luego, identifica y explica las diferencias entre `LISTENERPRA` y `LISTENERLAB` 
 
 <br/><br/>
 
-## **Resultado esperado**
+## **Resultado Esperado**
 
 * Listener `LISTENERPRA` creado correctamente con protocolo **TCP/IP**, host `localhost` y puerto `1551`.
 * Archivos `listener.ora` y `tnsnames.ora` actualizados y guardados sin errores.

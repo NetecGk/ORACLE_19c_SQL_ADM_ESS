@@ -130,7 +130,7 @@ El siguiente diagrama representa el ciclo de vida de una base de datos Oracle, m
 
 <br/><br/>
 
-### **Tarea 7. Desafío – Nivel de certificación**
+### **Tarea 7. Desafío**
 
 Diseña una **sola secuencia de comandos SQL** que:
 

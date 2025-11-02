@@ -41,7 +41,7 @@ El siguiente diagrama muestra la relación entre el entorno gráfico de **SQL De
 
 ## **Instrucciones**
 
-#### **Tarea 1. Instalación y configuración inicial**
+### **Tarea 1. Instalación y configuración inicial**
 
 1. Descomprime el archivo de instalación en tu directorio personal:
 
@@ -71,7 +71,7 @@ El siguiente diagrama muestra la relación entre el entorno gráfico de **SQL De
 
 <br/><br/>
 
-#### **Tarea 2. Creación de conexiones**
+### **Tarea 2. Creación de conexiones**
 
 1. Crea una conexión para el usuario **SYS (Administrador)**:
 
@@ -101,7 +101,7 @@ El siguiente diagrama muestra la relación entre el entorno gráfico de **SQL De
 
 <br/><br/>
 
-#### **Tarea 3. Desbloqueo de la cuenta HR (si aplica)**
+### **Tarea 3. Desbloqueo de la cuenta HR (si aplica)**
 
 Si la cuenta **HR** está bloqueada, realiza los siguientes pasos desde SQL Developer conectado como **SYSDBA**:
 
@@ -214,7 +214,7 @@ Si la cuenta **HR** está bloqueada, realiza los siguientes pasos desde SQL Deve
 
 <br/><br/>
 
-## **Resultado esperado**
+## **Resultado Esperado**
 
 Al finalizar la práctica, el participante deberá:
 

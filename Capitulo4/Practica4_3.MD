@@ -216,7 +216,7 @@
 
 <br/><br/>
 
-## **Resultado esperado**
+## **Resultado Esperado**
 
 * `USUARIO1` y `USUARIO2` pueden conectarse (poseen `CONEXION` → `CREATE SESSION`).
 * `USUARIO1` crea correctamente `MENSAJES` en `TB_USUARIOS` tras asignarle **cuota** (se resolvió ORA-01950).

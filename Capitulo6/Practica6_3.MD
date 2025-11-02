@@ -139,7 +139,7 @@ Guarda y comenta cada instrucción dentro del script.
 
 <br/><br/>
 
-## **Resultado esperado**
+## **Resultado Esperado**
 
 * El parámetro `LOCAL_LISTENER` apunta correctamente a `LISTENERPRA`.
 * El listener `LISTENERPRA` aparece activo en estado **READY**.

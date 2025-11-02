@@ -118,7 +118,7 @@ Guarda tu script como `p06_controlfile_cert.sql` y ejecútalo.
 
 <br/><br/>
 
-## **Resultado esperado**
+## **Resultado Esperado**
 
 * Captura de pantalla mostrando:
 

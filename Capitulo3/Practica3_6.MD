@@ -115,7 +115,7 @@ El siguiente diagrama muestra la relación entre **PFILE**, **SPFILE** y los val
 
 <br/><br/>
 
-### **Tarea 6. Desafío – Nivel de certificación**
+### **Tarea 6. Desafío**
 
 Determina qué sucedería si el parámetro modificado fuera **estático** y se intentara cambiar con `SCOPE=MEMORY`.
 

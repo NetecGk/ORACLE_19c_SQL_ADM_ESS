@@ -149,7 +149,7 @@ Diseña una consulta que muestre, para todas las tablas del esquema `HR`, el nom
 
 <br/><br/>
 
-## **Resultado esperado**
+## **Resultado Esperado**
 
 * Lista de tablespaces y sus modos de administración.
 * Relación entre tablespaces y datafiles con tamaños en MB.
