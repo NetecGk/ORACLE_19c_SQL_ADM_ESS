@@ -156,7 +156,7 @@ El siguiente esquema muestra el flujo general de una carga de datos con **SQL*Lo
 
 <br/><br/>
 
-### **Tarea 10. Desafío – Nivel de certificación**
+### **Tarea 10. Desafío**
 
 Crea tu propio archivo `.dat` con registros adicionales para la tabla `productos` y genera un **archivo de control personalizado (.ctl)** que:
 
