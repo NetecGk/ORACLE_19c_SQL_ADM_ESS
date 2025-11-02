@@ -1,5 +1,3 @@
-Práctica del Capítulo 1. Fundamentos de SQL
-
 # **Capítulo 1.** Fundamentos de SQL en Oracle Database
 
 ## **[Práctica 1.1 Acceso al Entorno de Curso](Practica1_1.MD)**
