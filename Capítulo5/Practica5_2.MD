@@ -183,7 +183,7 @@ Incluye las sentencias SQL que usarías en cada caso y justifica su elección.
 <br/><br/>
 
 
-## **Resultado esperado**
+## **Resultado Esperado**
 
 Al finalizar esta práctica, el participante habrá creado y gestionado correctamente tablespaces en Oracle, interpretado errores del sistema (ORA-12913 y ORA-01653), y aplicado técnicas de ampliación de espacio (manual y automática).
 

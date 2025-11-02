@@ -125,7 +125,7 @@ El siguiente esquema muestra cómo un tablespace puede **extenderse** al **redim
 
 <br/><br/>
 
-### **Tarea 6. Desafío – Nivel de certificación**
+### **Tarea 6. Desafío**
 
 Diseña un script SQL que:
 
@@ -135,7 +135,7 @@ Diseña un script SQL que:
 
 <br/><br/>
 
-## **Resultado esperado**
+## **Resultado Esperado**
 
 * Redimensionado correctamente el datafile `df_usuarios.dbf` a 5 MB.
 * Agregado un nuevo datafile `df_usuarios2.dbf` de 5 MB.
