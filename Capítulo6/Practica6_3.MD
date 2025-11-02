@@ -1,6 +1,5 @@
 # **Práctica 6.3 Uso del Nuevo Listener**
 
-
 ## **Objetivos**
 
 * Consultar y modificar el parámetro `LOCAL_LISTENER` en la base de datos.

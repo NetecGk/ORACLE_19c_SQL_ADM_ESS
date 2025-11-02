@@ -1,5 +1,5 @@
 
-# **Práctica 7.1 – Uso de Oracle Data Pump**
+# **Práctica 7.1 Uso de Oracle Data Pump**
 
 ## **Objetivos**
 

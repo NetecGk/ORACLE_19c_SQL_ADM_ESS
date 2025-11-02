@@ -1,6 +1,6 @@
 # **Práctica 8.2 Uso de Oracle SQL Developer**
 
-## **Objetivos específicos**
+## **Objetivos**
 
 * Instalar y ejecutar Oracle SQL Developer en el entorno Linux/Oracle.
 * Configurar las preferencias iniciales del entorno.

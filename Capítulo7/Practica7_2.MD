@@ -1,5 +1,5 @@
 
-# **Práctica 7.2 – Carga de Datos con SQL*Loader**
+# **Práctica 7.2 Carga de Datos con SQL*Loader**
 
 
 ## **Objetivos**
