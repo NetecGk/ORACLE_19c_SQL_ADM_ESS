@@ -106,7 +106,7 @@
 
 <br/><br/>
 
-### **Desafío**
+### **Tarea 6. Desafío**
 
 Diseña un script SQL que elimine **todos los tablespaces de prácticas anteriores**, incluyendo sus contenidos y datafiles, pero **preservando los tablespaces del sistema** (`SYSTEM`, `SYSAUX`, `UNDOTBS1`, `TEMP`, `USERS`).
 Tu script debe:
