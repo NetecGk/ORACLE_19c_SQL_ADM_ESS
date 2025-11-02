@@ -26,6 +26,7 @@
 | Usuarios                | `DBA_USERS`                              | `SELECT USERNAME, DEFAULT_TABLESPACE, TEMPORARY_TABLESPACE FROM DBA_USERS;`            | Confirmar TS por defecto.                           |
 | Errores                 | `oerr`                                   | `$ oerr ora 01950`                                                                     | Muestra causa y acción sugerida.                    |
 
+<br/><br/>
 
 ## **Instrucciones**
 
