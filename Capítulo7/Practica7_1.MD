@@ -1,7 +1,7 @@
 
 # **Práctica 7.1 – Uso de Oracle Data Pump**
 
-## **Objetivos específicos**
+## **Objetivos**
 
 * Identificar y verificar el **directorio lógico** configurado en Oracle para Data Pump.
 * Ejecutar una **exportación lógica** del esquema HR con `expdp`.
