@@ -8,7 +8,7 @@ En esta práctica aprenderás a **utilizar Oracle Data Pump** para exportar e im
 <br/><br/>
 
 
-# [**Práctica 7.2 – Carga de Datos con SQL*Loader**](Practica7_2.MD)
+# [**Práctica 7.2 Carga de Datos con SQL*Loader**](Practica7_2.MD)
 
 
 En esta práctica aprenderás a **utilizar SQL*Loader** en su modalidad **express y controlada mediante archivo `.ctl`**, para cargar datos desde archivos de texto hacia tablas de Oracle. Ejecutarás scripts de preparación, revisarás archivos de datos (`.dat`), cargarás información en tablas existentes y analizarás los mensajes generados por el proceso, comprendiendo así cómo Oracle maneja la carga masiva de datos desde fuentes externas.
