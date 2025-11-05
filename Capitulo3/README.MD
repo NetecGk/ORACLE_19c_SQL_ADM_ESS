@@ -22,17 +22,17 @@ Durante esta práctica, ejecutarás los comandos necesarios para **iniciar y cer
 
 ## [**Práctica 3.4. Visualización de parámetros de inicialización**](Practica3_4.MD)
 
-Esta práctica te guiará en la consulta e interpretación de los **parámetros de inicialización** de Oracle Database. Aprenderás a distinguir entre parámetros dinámicos y estáticos, identificar su origen (SPFILE, PFILE o valores por defecto) y comprender cómo influyen en la memoria, la gestión de procesos y el rendimiento general del sistema.
+Esta práctica te guiará en la consulta e interpretación de los **parámetros de inicialización** de Oracle Database. Aprenderás a distinguir entre parámetros dinámicos y estáticos, identificar su origen (`SPFILE`, `PFILE` o valores por defecto) y comprender cómo influyen en la memoria, la gestión de procesos y el rendimiento general del sistema.
 
 <br/><br/>
 
 ## [**Práctica 3.5. Copia de SPFILE**](Practica3_5.MD)
 
-En esta práctica crearás y gestionarás copias del archivo **SPFILE (Server Parameter File)**, comprendiendo su papel en la configuración de la instancia y el arranque del sistema. Se te guiará en la creación de respaldos, restauración y uso de copias alternativas para iniciar la base de datos en escenarios de mantenimiento o recuperación.
+En esta práctica, crearás y gestionarás copias del archivo **SPFILE (Server Parameter File)**, comprendiendo su papel en la configuración de la instancia y el arranque del sistema. Se te guiará en la creación de respaldos, restauración y uso de copias alternativas para iniciar la base de datos en escenarios de mantenimiento o recuperación.
 
 <br/><br/>
 
-## [**Práctica 3.6. Modificación de Parámetros**](Practica3_6.MD)
+## [**Práctica 3.6. Modificación de parámetros**](Practica3_6.MD)
 
-Esta práctica te permitirá experimentar con la **modificación de parámetros del sistema**, aplicando los diferentes alcances disponibles (MEMORY, SPFILE, BOTH) para realizar ajustes temporales o persistentes. Analizarás los efectos de los cambios sobre la instancia en ejecución y aprenderás a validar su persistencia tras el reinicio de la base de datos.
+Esta práctica te permitirá experimentar con la **modificación de parámetros del sistema**, aplicando los diferentes alcances disponibles (`MEMORY`, `SPFILE`, `BOTH`) para realizar ajustes temporales o persistentes. Analizarás los efectos de los cambios sobre la instancia en ejecución y aprenderás a validar su persistencia tras el reinicio de la base de datos.
 
