@@ -126,7 +126,7 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
   - **Descripción**: En esta práctica, aprenderás a **utilizar SQL*Loader** en su modalidad **express y controlada mediante archivo `.ctl`**, para cargar datos desde archivos de texto hacia tablas de Oracle. Ejecutarás scripts de preparación, revisarás archivos de datos (`.dat`), cargarás información en tablas existentes y analizarás los mensajes generados por el proceso, comprendiendo así cómo Oracle maneja la carga masiva de datos desde fuentes externas.
   - ⏱️**Duración estimada**: 45 min.
 
-### [Práctica 8.1. Uso de SQL*Plus](*https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo8/Practica8_1.html)
+### [Práctica 8.1. Uso de SQL*Plus](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo8/Practica8_1.html)
   - **Descripción**: En esta práctica, aprenderás a **utilizar la herramienta SQL*Plus** para conectarte a Oracle Database, ejecutar comandos básicos del entorno, personalizar el prompt y el formato de salida y generar reportes legibles a partir de consultas SQL. También practicarás el cambio de sesión entre distintos usuarios y la configuración de parámetros de visualización en SQL*Plus.
   - ⏱️**Duración estimada**: 25 min.
 
