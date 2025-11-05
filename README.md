@@ -16,11 +16,11 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
 
 ### [Práctica 1.2. SQL Básicos](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo1/Practica1_2.html)
   - **Descripción**: en esta práctica se ejecutarán consultas SQL básicas sobre el esquema HR. El participante aprenderá a aplicar filtros y operadores lógicos, utilizar variables de sustitución (`&` y `&&`) y manejar correctamente los valores `NULL` dentro de las consultas, comprendiendo su impacto en los resultados.
-  - ⏱️ **Duración estimada**: 60 - 80 min.
+  - ⏱️ **Duración estimada**: 60-80 min.
 
 ### [Práctica 1.3. Funciones de una sola fila, fechas y conversión](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo1/Practica1_3.html) 
   - **Descripción**: durante esta práctica se trabajará con funciones de una sola fila, incluyendo funciones de carácter, número y fecha. El participante aplicará funciones de conversión (`TO_CHAR`, `TO_DATE`, `TO_NUMBER`) con *format models*, utilizará funciones para el manejo de valores nulos (`NVL`, `NVL2`, `NULLIF`, `COALESCE`), y comprenderá cómo anidar funciones manteniendo el tipo de dato resultante. Además, realizará operaciones aritméticas con fechas y usará funciones de calendario (`ADD_MONTHS`, `NEXT_DAY`) considerando el parámetro regional (`NLS_TERRITORY`) y las diferencias entre los formatos `YY` y `RR`.
-  - ⏱️ **Duración estimada**: 90 - 110 min.
+  - ⏱️ **Duración estimada**: 90-110 min.
  
 ### [Práctica 1.4. Agregación y operadores de conjuntos](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo1/Practica1_4.html)
   - **Descripción**: en esta práctica se aplicarán funciones de grupo y operadores de conjunto utilizando el esquema HR. El participante ejecutará consultas que incluyan `GROUP BY` y `HAVING`, comparará los resultados entre `UNION`, `UNION ALL`, `INTERSECT` y `MINUS`, y aprenderá a evitar errores comunes de agrupamiento (`ORA-00979`) eligiendo el operador o función más adecuada según el caso..
@@ -28,7 +28,7 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
 
 ### [Práctica 1.5. Joins en Oracle SQL](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo1/Practica1_5.html)
   - **Descripción**: Esta práctica se enfoca en el uso de diferentes tipos de `JOIN` para combinar datos de múltiples tablas dentro del esquema HR. El participante construirá consultas utilizando `NATURAL JOIN`, `USING`, `ON`, así como equijoins, outer joins (`LEFT`, `RIGHT`, `FULL`), el producto cartesiano y el **self join** con uso obligatorio de alias, comprendiendo cuándo y cómo aplicar cada uno según la relación entre las tablas.
-  - ⏱️ **Duración estimada**: 70 - 85 min.
+  - ⏱️ **Duración estimada**: 70-85 min.
 
 ### [Práctica 1.6. Subqueries](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo1/Practica1_6.html) 
   - **Descripción**: A lo largo de esta práctica se desarrollarán consultas SQL que incorporen subconsultas básicas y correlacionadas. El participante aplicará los predicados `IN`, `EXISTS`, `ANY` y `ALL`, analizará el comportamiento de las subconsultas en distintos contextos y aprenderá a interpretar correctamente su semántica y cardinalidad para optimizar el resultado de las consultas.
@@ -36,11 +36,11 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
 
 ### [Práctica 2.1. Usando DML para gestionar datos y transacciones](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo2/Practica2_1.html)
   - **Descripción**: En esta práctica construirás una tabla temporal basada en el esquema HR para **insertar**, **actualizar** y **eliminar** registros. Aprenderás a **confirmar** (`COMMIT`) y **revertir** (`ROLLBACK`) cambios, así como a establecer **puntos de guardado** (`SAVEPOINT`) para controlar el flujo de una transacción. El objetivo es que domines el ciclo completo de trabajo con **DML** en Oracle (`INSERT`/`UPDATE`/`DELETE` + control transaccional), empleando **variables de sustitución** para crear scripts reutilizables.
-  - ⏱️**Duración estimada**: 55 - 70 min.
+  - ⏱️**Duración estimada**: 55-70 min.
 
 ### [Práctica 2.2. Usando DDL para definir y modificar estructuras de tablas](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo2/Practica2_2.html)
   - **Descripción**: En esta práctica explorarás los principales comandos **DDL (Data Definition Language)** de Oracle, que permiten **crear, modificar y eliminar objetos** en la base de datos. Aprenderás a construir tablas desde cero, duplicar estructuras existentes, agregar y eliminar columnas, establecer restricciones básicas y eliminar objetos de forma segura. También practicarás cómo cambiar el estado de una tabla a **solo lectura (`READ ONLY`)** para evitar modificaciones temporales.
-  - ⏱️**Duración estimada**: 60 - 75 min.
+  - ⏱️**Duración estimada**: 60-75 min.
 
 ### [Práctica 3.1. Quiz](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo3/Practica3_1.html)
   - **Descripción**: Esta práctica te permitirá consolidar los conceptos teóricos relacionados con la administración de bases de datos Oracle mediante un breve cuestionario. Servirá como diagnóstico previo para medir tu comprensión sobre instancias, estructuras de almacenamiento, archivos de control y parámetros iniciales antes de realizar las prácticas técnicas del capítulo.
@@ -48,15 +48,15 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
 
 ### [Práctica 3.2. Conexión a la base de datos con SQL*Plus](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo3/Practica3_2.html)
   - **Descripción**: En esta práctica establecerás conexión con una base de datos Oracle utilizando **SQL*Plus**, explorando los diferentes modos de acceso (local y remoto) y verificando las variables de entorno que intervienen en la conexión. También identificarás el estado de la instancia y los elementos clave del entorno de trabajo..
-  - ⏱️**Duración estimada**: 20 - 25 min.
+  - ⏱️**Duración estimada**: 20-25 min.
 
 ### [Práctica 3.3. Inicio y cierre de bases de datos](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo3/Practica3_3.html)
   - **Descripción**: Durante esta práctica, ejecutarás los comandos necesarios para **iniciar y cerrar instancias de base de datos Oracle**, reconociendo los diferentes estados de la instancia (`NOMOUNT`, `MOUNT`, `OPEN`) y los modos de cierre (`NORMAL`, `IMMEDIATE`, `ABORT`). Aprenderás a verificar la conexión del servicio mediante el **Listener** y a interpretar los mensajes del proceso de arranque.
-  - ⏱️**Duración estimada**: 25 - 30 min.
+  - ⏱️**Duración estimada**: 25-30 min.
 
 ### [Práctica 3.4. Visualización de parámetros de inicialización](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo3/Practica3_4.html)
   - **Descripción**: Esta práctica te guiará en la consulta e interpretación de los **parámetros de inicialización** de Oracle Database. Aprenderás a distinguir entre parámetros dinámicos y estáticos, identificar su origen (`SPFILE`, `PFILE` o valores por defecto) y comprender cómo influyen en la memoria, la gestión de procesos y el rendimiento general del sistema.
-  - ⏱️**Duración estimada**: 40 - 55 min.
+  - ⏱️**Duración estimada**: 40-55 min.
 
 ### [Práctica 3.5. Copia de SPFILE](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo3/Practica3_5.html)
   - **Descripción**: En esta práctica, crearás y gestionarás copias del archivo **SPFILE (Server Parameter File)**, comprendiendo su papel en la configuración de la instancia y el arranque del sistema. Se te guiará en la creación de respaldos, restauración y uso de copias alternativas para iniciar la base de datos en escenarios de mantenimiento o recuperación.
@@ -76,7 +76,7 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
 
 ### [Práctica 4.3. Gestión integral de usuarios, roles y cuotas](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo4/Practica4_3.html)
   - **Descripción**: Esta práctica te permitirá **integrar la administración completa de la seguridad** en Oracle 19c, abarcando la creación y verificación de **usuarios, roles, privilegios y cuotas de tablespaces**. Pondrás en práctica la resolución de errores comunes como **ORA-01031** y **ORA-01950**, asegurando que los usuarios cuenten con los privilegios y el espacio necesarios para crear y gestionar sus propios objetos dentro de la base de datos.
-  - ⏱️**Duración estimada**: 60 - 75 min.
+  - ⏱️**Duración estimada**: 60-75 min.
 
 ### [Práctica 5.1. Visualización del espacio de almacenamiento](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo5/Practica5_1.html)
   - **Descripción**: En esta práctica, identificarás las **estructuras físicas y lógicas del almacenamiento** en Oracle Database, como tablespaces, datafiles y bloques de datos. Utilizarás vistas del diccionario de datos (`DBA_TABLESPACES`, `DBA_DATA_FILES`, `DBA_SEGMENTS`, entre otras) para **analizar la distribución del espacio**, verificar la **ubicación física de los archivos** y comprender cómo Oracle asigna el almacenamiento a los objetos de usuario.
@@ -104,18 +104,18 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
 
 ### [Práctica 5.7. Redo Logs (grupos y miembros)](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo5/Practica5_7.html)
   - **Descripción**: Identificar, verificar y administrar los **grupos y miembros del Redo Log online** en Oracle 19c, agregando nuevos grupos/miembros.
-  - ⏱️**Duración estimada**: 40 - 55 min.
+  - ⏱️**Duración estimada**: 40-55 min.
 
 ### [Práctica 6.1. Creación de Network Service](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo6/Practica6_1.html)
   - **Descripción**: En esta práctica, crearás y probarás un **nuevo servicio de red (Network Service)** en Oracle Database, utilizando la herramienta **Oracle Net Manager (netmgr)**. Aprenderás a configurar un *Service Naming* que permita establecer conexión a la base de datos local mediante el protocolo **TCP/IP**, validando la comunicación entre cliente y servidor mediante el usuario **HR**.
   - ⏱️**Duración estimada**: 30 min.
 
-### [Práctica 6.2. Creación de un nuevo `LISTENER`](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo6/Practica6_2.html)
-  - **Descripción**: En esta práctica, aprenderás a **crear y configurar un nuevo listener en Oracle Database** utilizando la herramienta **Oracle Net Manager (netmgr)**. El Listener es el proceso encargado de gestionar las solicitudes de conexión entre los clientes y la base de datos. Configurarás un listener alterno llamado `LISTENERPRA`, especificando protocolo, host y puerto, y validarás su funcionamiento desde la línea de comandos.
+### [Práctica 6.2. Creación de un nuevo Listener](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo6/Practica6_2.html)
+  - **Descripción**: En esta práctica, aprenderás a **crear y configurar un nuevo Listener en Oracle Database** utilizando la herramienta **Oracle Net Manager (netmgr)**. El Listener es el proceso encargado de gestionar las solicitudes de conexión entre los clientes y la base de datos. Configurarás un Listener alterno llamado `LISTENERPRA`, especificando protocolo, host y puerto, y validarás su funcionamiento desde la línea de comandos.
   - ⏱️**Duración estimada**: 25 min.
 
 ### [Práctica 6.3. Uso del nuevo Listener](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo6/Practica6_3.html)
-  - **Descripción**: En esta práctica, aplicarás los conocimientos adquiridos sobre la configuración de listeners en Oracle Database. El objetivo es **asociar la instancia de la base de datos ORCL con el nuevo listener creado previamente (`LISTENERPRA`)**, modificando el parámetro `LOCAL_LISTENER` y verificando la conectividad. Además, dejarás configurado este listener como permanente y probarás su funcionamiento tras reiniciar la base de datos.
+  - **Descripción**: En esta práctica, aplicarás los conocimientos adquiridos sobre la configuración de Listener en Oracle Database. El objetivo es **asociar la instancia de la base de datos ORCL con el nuevo Listener creado previamente (`LISTENERPRA`)**, modificando el parámetro `LOCAL_LISTENER` y verificando la conectividad. Además, dejarás configurado este Listener como permanente y probarás su funcionamiento tras reiniciar la base de datos.
   - ⏱️**Duración estimada**: 30 min.
 
 ### [Práctica 7.1. Uso de Oracle Data Pump](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo7/Practica7_1.html)
