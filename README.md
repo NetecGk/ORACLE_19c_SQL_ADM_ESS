@@ -10,7 +10,7 @@ Te damos la bienvenida a la **plataforma de laboratorios** del curso **Base de D
  
 Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia práctica. Haz clic en los enlaces para comenzar.
  
-### [Práctica 1.1. Acceso al entorno de Curso](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo1/Practica1_1.html) 
+### [Práctica 1.1. Acceso al entorno del curso](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo1/Practica1_1.html) 
   - **Descripción**: comprobar el acceso y funcionamiento del entorno asignado para el curso, validando el inicio de sesión, la apertura de terminal, los permisos de usuario y las características básicas del sistema operativo Oracle Linux.
   - ⏱️ **Duración estimada**: 20 min.
 
