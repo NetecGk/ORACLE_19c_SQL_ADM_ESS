@@ -11,27 +11,27 @@ Te damos la bienvenida a la **plataforma de laboratorios** del curso **Base de D
 Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia práctica. Haz clic en los enlaces para comenzar.
  
 ### [Práctica 1.1. Acceso al entorno del curso](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo1/Practica1_1.html) 
-  - **Descripción**: comprobar el acceso y funcionamiento del entorno asignado para el curso, validando el inicio de sesión, la apertura de terminal, los permisos de usuario y las características básicas del sistema operativo Oracle Linux.
+  - **Descripción**: comprobarás el acceso y funcionamiento del entorno asignado para el curso, validando el inicio de sesión, la apertura de terminal, los permisos de usuario y las características básicas del sistema operativo Oracle Linux.
   - ⏱️ **Duración estimada**: 20 min.
 
 ### [Práctica 1.2. SQL básicos](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo1/Practica1_2.html)
-  - **Descripción**: en esta práctica se ejecutarán consultas SQL básicas sobre el esquema HR. El participante aprenderá a aplicar filtros y operadores lógicos, utilizar variables de sustitución (`&` y `&&`) y manejar correctamente los valores `NULL` dentro de las consultas, comprendiendo su impacto en los resultados.
+  - **Descripción**: en esta práctica, ejecutarás consultas SQL básicas sobre el esquema HR. Aprenderás a aplicar filtros y operadores lógicos, a utilizar variables de sustitución (`&` y `&&`) y a manejar correctamente los valores `NULL` dentro de las consultas, comprendiendo su impacto en los resultados.
   - ⏱️ **Duración estimada**: 60-80 min.
 
 ### [Práctica 1.3. Funciones de una sola fila, fechas y conversión](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo1/Practica1_3.html) 
-  - **Descripción**: durante esta práctica se trabajará con funciones de una sola fila, incluyendo funciones de carácter, número y fecha. El participante aplicará funciones de conversión (`TO_CHAR`, `TO_DATE`, `TO_NUMBER`) con *format models*, utilizará funciones para el manejo de valores nulos (`NVL`, `NVL2`, `NULLIF`, `COALESCE`), y comprenderá cómo anidar funciones manteniendo el tipo de dato resultante. Además, realizará operaciones aritméticas con fechas y usará funciones de calendario (`ADD_MONTHS`, `NEXT_DAY`) considerando el parámetro regional (`NLS_TERRITORY`) y las diferencias entre los formatos `YY` y `RR`.
+  - **Descripción**: durante esta práctica, trabajarás con funciones de una sola fila, incluyendo funciones de carácter, número y fecha. Aplicarás funciones de conversión (`TO_CHAR`, `TO_DATE`, `TO_NUMBER`) con *format models*. Urilizarás funciones para el manejo de valores nulos (`NVL`, `NVL2`, `NULLIF`, `COALESCE`) y comprenderás cómo anidar funciones manteniendo el tipo de dato resultante. Además, realizarás operaciones aritméticas con fechas y usarás funciones de calendario (`ADD_MONTHS`, `NEXT_DAY`), considerando el parámetro regional (`NLS_TERRITORY`) y las diferencias entre los formatos `YY` y `RR`.
   - ⏱️ **Duración estimada**: 90-110 min.
  
 ### [Práctica 1.4. Agregación y operadores de conjuntos](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo1/Practica1_4.html)
-  - **Descripción**: en esta práctica se aplicarán funciones de grupo y operadores de conjunto utilizando el esquema HR. El participante ejecutará consultas que incluyan `GROUP BY` y `HAVING`, comparará los resultados entre `UNION`, `UNION ALL`, `INTERSECT` y `MINUS`, y aprenderá a evitar errores comunes de agrupamiento (`ORA-00979`) eligiendo el operador o función más adecuada según el caso..
+  - **Descripción**: en esta práctica, aplicarás funciones de grupo y operadores de conjunto, utilizando el esquema HR. Ejecutarás consultas que incluyan `GROUP BY` y `HAVING`; compararás los resultados entre `UNION`, `UNION ALL`, `INTERSECT` y `MINUS`; y aprenderás a evitar errores comunes de agrupamiento (`ORA-00979`) eligiendo el operador o función más adecuada según el caso.
   - ⏱️ **Duración estimada**: 70 min.
 
 ### [Práctica 1.5. Joins en Oracle SQL](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo1/Practica1_5.html)
-  - **Descripción**: Esta práctica se enfoca en el uso de diferentes tipos de `JOIN` para combinar datos de múltiples tablas dentro del esquema HR. El participante construirá consultas utilizando `NATURAL JOIN`, `USING`, `ON`, así como equijoins, outer joins (`LEFT`, `RIGHT`, `FULL`), el producto cartesiano y el **self join** con uso obligatorio de alias, comprendiendo cuándo y cómo aplicar cada uno según la relación entre las tablas.
+  - **Descripción**: esta práctica se enfoca en el uso de diferentes tipos de `JOIN` para combinar datos de múltiples tablas dentro del esquema HR. Construirás consultas utilizando `NATURAL JOIN`, `USING`, `ON`, así como equijoins, outer joins (`LEFT`, `RIGHT`, `FULL`), el producto cartesiano y el **self join** con uso obligatorio de alias, comprendiendo cuándo y cómo aplicar cada uno según la relación entre las tablas.
   - ⏱️ **Duración estimada**: 70-85 min.
 
 ### [Práctica 1.6. Subqueries](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo1/Practica1_6.html) 
-  - **Descripción**: A lo largo de esta práctica se desarrollarán consultas SQL que incorporen subconsultas básicas y correlacionadas. El participante aplicará los predicados `IN`, `EXISTS`, `ANY` y `ALL`, analizará el comportamiento de las subconsultas en distintos contextos y aprenderá a interpretar correctamente su semántica y cardinalidad para optimizar el resultado de las consultas.
+  - **Descripción**: a lo largo de esta práctica, desarrollarás consultas SQL que incorporen subconsultas básicas y correlacionadas. Aplicarás los predicados `IN`, `EXISTS`, `ANY` y `ALL`, analizarás el comportamiento de las subconsultas en distintos contextos y aprenderás a interpretar correctamente su semántica y cardinalidad para optimizar el resultado de las consultas.
   - ⏱️ **Duración estimada**: 60 min.
 
 ### [Práctica 2.1. Usando DML para gestionar datos y transacciones](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo2/Practica2_1.html)
