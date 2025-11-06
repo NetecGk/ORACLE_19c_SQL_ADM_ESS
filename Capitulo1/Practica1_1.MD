@@ -1,37 +1,37 @@
-# **Práctica 1.1 Acceso al Entorno del Curso**
+# **Práctica 1.1. Acceso al entorno del curso**
 
 
-## **Objetivos**
+## Objetivos
 
 * Acceder correctamente al equipo virtual o remoto asignado, según la modalidad del curso.
 * Verificar el usuario actual y los grupos asociados.
-* Comprobar los privilegios de superadministrador (root).
+* Comprobar los privilegios de superadministrador (`root`).
 * Inspeccionar las particiones, el espacio en disco y la versión del sistema operativo.
 * Familiarizarse con los comandos básicos de administración en Linux.
 
 <br/><br/>
 
-## **Duración estimada**
+## Duración estimada
 
-20 minutos
+- 20 minutos.
 
 <br/><br/>
 
-## **Tabla de Ayuda**
+## Tabla de ayuda
 
 | Comando     | Descripción                                                      | Ejemplo o comentario                            |
 | ----------- | ---------------------------------------------------------------- | ----------------------------------------------- |
 | `id`        | Muestra el usuario actual y los grupos a los que pertenece.      | `id`                                            |
-| `su - root` | Cambia al usuario superadministrador (root).                     | Contraseña: `Oracle1`                           |
+| `su - root` | Cambia al usuario superadministrador (`root`).                     | Contraseña: `Oracle1`                           |
 | `mount -a`  | Lista las particiones montadas del sistema.                      | Debe mostrar los puntos de montaje disponibles. |
 | `df`        | Muestra el uso y espacio disponible de los sistemas de archivos. | `df -h` muestra el tamaño en formato legible.   |
-| `uname -a`  | Despliega información completa del sistema operativo.            | Incluye kernel, arquitectura y versión.         |
+| `uname -a`  | Despliega la información completa del sistema operativo.            | Incluye kernel, arquitectura y versión.         |
 
-**Nota:** En BASH, el símbolo `$` representa el *prompt* del shell. El carácter `#` se utiliza para comentarios dentro de los comandos o scripts.
+> **Nota:** en BASH, el símbolo `$` representa el *prompt* del shell. El carácter `#` se utiliza para comentarios dentro de los comandos o scripts.
 
 <br/><br/>
 
-## **Objetivo Visual**
+## Objetivo visual
 
 El objetivo es familiarizarse con el acceso al entorno Linux sobre el cual se realizarán las prácticas de Oracle Database.
 
@@ -39,9 +39,9 @@ El objetivo es familiarizarse con el acceso al entorno Linux sobre el cual se re
 
 <br/><br/>
 
-## **Instrucciones**
+## Instrucciones
 
-### **Tarea 1. Acceso al entorno**
+### Tarea 1. Acceso al entorno.
 
 1. Según la modalidad del curso:
 
@@ -55,11 +55,11 @@ El objetivo es familiarizarse con el acceso al entorno Linux sobre el cual se re
 
 3. Abre una terminal:
 
-   * Desde el menú de actividades o haciendo clic derecho sobre el escritorio y seleccionando **“Abrir terminal”**.
+   - Desde el menú de actividades o dando click derecho sobre el escritorio y seleccionando **"Abrir terminal"**.
 
 <br/><br/>
 
-### **Tarea 2. Verificación del usuario**
+### Tarea 2. Verificación del usuario.
 
 1. Ejecuta el siguiente comando para comprobar tu usuario actual y grupos asociados:
 
@@ -69,9 +69,9 @@ El objetivo es familiarizarse con el acceso al entorno Linux sobre el cual se re
 
 <br/><br/>
 
-### **Tarea 3. Acceso como superadministrador**
+### Tarea 3. Acceso como superadministrador.
 
-1. Cambia a la cuenta **root**:
+1. Cambia a la cuenta `root`:
 
    ```bash
    $ su - root
@@ -81,7 +81,7 @@ El objetivo es familiarizarse con el acceso al entorno Linux sobre el cual se re
 
 <br/><br/>
 
-### **Tarea 4. Comprobación del sistema**
+### Tarea 4. Comprobación del sistema.
 
 1. Muestra las particiones y sistemas de archivos montados:
 
@@ -99,25 +99,25 @@ El objetivo es familiarizarse con el acceso al entorno Linux sobre el cual se re
    # uname -a
    ```
 
-4. Verifica el estado de LISTENER
+4. Verifica el estado de Listener:
 
    ```bash
    # lsnrctl status
    ```
 
-4. Verifica las variables de ambiente asociadas a Oracle
+4. Verifica las variables de ambiente asociadas a Oracle:
 
    ```bash
    # env | grep -i oracle
    ```
 
-5. Verifica los alias del comando `rlwrap`
+5. Verifica los alias del comando `rlwrap`:
 
    ```bash
    # alias | grep rlwrap
    ```
 
-6. Verifica el acceso a `sqlplus`
+6. Verifica el acceso a `sqlplus`:
 
    ```bash
    # whereis sqlplus
@@ -127,7 +127,7 @@ El objetivo es familiarizarse con el acceso al entorno Linux sobre el cual se re
 <br/><br/>
 
 
-## **Resultado Esperado**
+## Resultado esperado
 
 La captura de pantalla siguiente confirma que el entorno de Oracle está correctamente configurado, con alias funcionales y herramientas accesibles desde la cuenta del usuario oracle.
  
