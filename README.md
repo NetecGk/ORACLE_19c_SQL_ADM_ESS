@@ -14,7 +14,7 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
   - **Descripción**: comprobar el acceso y funcionamiento del entorno asignado para el curso, validando el inicio de sesión, la apertura de terminal, los permisos de usuario y las características básicas del sistema operativo Oracle Linux.
   - ⏱️ **Duración estimada**: 20 min.
 
-### [Práctica 1.2. SQL Básicos](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo1/Practica1_2.html)
+### [Práctica 1.2. SQL básicos](https://netecgk.github.io/ORACLE_19c_SQL_ADM_ESS/Capitulo1/Practica1_2.html)
   - **Descripción**: en esta práctica se ejecutarán consultas SQL básicas sobre el esquema HR. El participante aprenderá a aplicar filtros y operadores lógicos, utilizar variables de sustitución (`&` y `&&`) y manejar correctamente los valores `NULL` dentro de las consultas, comprendiendo su impacto en los resultados.
   - ⏱️ **Duración estimada**: 60-80 min.
 
