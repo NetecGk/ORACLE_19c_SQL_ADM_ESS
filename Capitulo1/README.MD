@@ -6,13 +6,13 @@ Comprobarás el acceso y funcionamiento del entorno asignado para el curso, vali
 
 <br/><br/>
 
-## [Práctica 1.2 SQL básicos](Practica1_2.MD)
+## [Práctica 1.2. SQL básicos](Practica1_2.MD)
 
 En esta práctica, ejecutarás consultas SQL básicas sobre el esquema HR. Aprenderás a aplicar filtros y operadores lógicos, a utilizar variables de sustitución (`&` y `&&`) y a manejar correctamente los valores `NULL` dentro de las consultas, comprendiendo su impacto en los resultados.
 
 <br/><br/>
 
-## [Práctica 1.3 Funciones de una sola fila, fechas y conversión](Practica1_3.MD)
+## [Práctica 1.3. Funciones de una sola fila, fechas y conversión](Practica1_3.MD)
 
 Durante esta práctica, trabajarás con funciones de una sola fila, incluyendo funciones de carácter, número y fecha. Aplicarás funciones de conversión (`TO_CHAR`, `TO_DATE`, `TO_NUMBER`) con *format models*. Urilizarás funciones para el manejo de valores nulos (`NVL`, `NVL2`, `NULLIF`, `COALESCE`) y comprenderás cómo anidar funciones manteniendo el tipo de dato resultante. Además, realizarás operaciones aritméticas con fechas y usarás funciones de calendario (`ADD_MONTHS`, `NEXT_DAY`), considerando el parámetro regional (`NLS_TERRITORY`) y las diferencias entre los formatos `YY` y `RR`.
 
