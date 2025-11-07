@@ -1,23 +1,23 @@
-# **Práctica 1.2 SQL Básicos**
+# Práctica 1.2. SQL básicos
 
-## **Objetivos**
+## Objetivos
 
-1. Reconocer las tablas y relaciones principales del esquema **HR**.
-2. Ejecutar sentencias `SELECT` con cláusulas `WHERE` y `ORDER BY`.
-3. Aplicar alias de columna y tabla para mejorar la legibilidad de los resultados.
-4. Utilizar variables de sustitución `&`, `&&`, `DEFINE` y `UNDEFINE` en SQL*Plus o SQL Developer.
-5. Identificar y aplicar correctamente los operadores de comparación y lógicos (`=`, `<`, `>`, `LIKE`, `AND`, `OR`, `IS [NOT] NULL`).
-6. Ejecutar consultas sobre la tabla `DUAL` para probar expresiones y funciones simples.
-
-
-
-## **Duración estimada**
-
-60 – 80 minutos
+* Reconocer las tablas y relaciones principales del esquema **HR**.
+* Ejecutar sentencias `SELECT` con cláusulas `WHERE` y `ORDER BY`.
+* Aplicar alias de columna y tabla para mejorar la legibilidad de los resultados.
+* Utilizar variables de sustitución `&`, `&&`, `DEFINE` y `UNDEFINE` en SQL*Plus o SQL Developer.
+* Identificar y aplicar correctamente los operadores de comparación y lógicos (`=`, `<`, `>`, `LIKE`, `AND`, `OR`, `IS [NOT] NULL`).
+* Ejecutar consultas sobre la tabla `DUAL` para probar expresiones y funciones simples.
 
 
 
-## **Tabla de Ayuda**
+## Duración estimada
+
+- 60–80 minutos.
+
+
+
+## Tabla de ayuda
 
 | Concepto                  | Descripción breve                                                                 | Referencia oficial Oracle                                                                                                                                            |
 | ------------------------- | --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -35,7 +35,7 @@
 
 <br/> <br/>
 
-## **Objetivo Visual**
+## Objetivo visual
 
 El diagrama representa la estructura de tablas relacionadas con la gestión de empleados, sus departamentos, puestos, ubicaciones geográficas y regiones. Las líneas punteadas indican las relaciones entre tablas mediante llaves foráneas (foreign keys).
  
@@ -43,7 +43,7 @@ El diagrama representa la estructura de tablas relacionadas con la gestión de e
 
 <br/><br/>
 
-## **Instrucciones**
+## Instrucciones
 
 ### **Tarea 1. Verificar el modelo entidad-relación del esquema HR**
 
