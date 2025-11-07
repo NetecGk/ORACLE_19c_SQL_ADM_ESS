@@ -25,7 +25,7 @@
 | `NATURAL JOIN`          | Une por todas las columnas **con el mismo nombre** en ambas tablas.       | `A NATURAL JOIN B`                          | Si ambas tienen `department_id`, se une por esa(s) columna(s). |
 | `USING`                 | Une por columnas con **el mismo nombre** listado y las expone **una sola vez**. | `A JOIN B USING (col)`                      | `employees JOIN departments USING (department_id)`.            |
 | `ON`                    | Condición libre (columnas con nombre igual o distinto).                   | `A JOIN B ON (<cond>)`                      | `locations.country_id = countries.country_id`.                 |
-| `LEFT/RIGHT/FULL OUTER` | Conserva filas de izquierda/derecha/ambas aunque no haya match.           | `A LEFT OUTER JOIN B ON ...`                | Empleados sin departamento (si existieran).                    |
+| `LEFT/RIGHT/FULL OUTER` | Conserva filas de izquierda/derecha/ambas, aunque no haya match.           | `A LEFT OUTER JOIN B ON ...`                | Empleados sin departamento (si existieran).                    |
 | Producto cartesiano     | Todas las combinaciones; **aparece si no hay condición**.                 | `A CROSS JOIN B` o `FROM A,B` sin condición | 107 empleados × 27 deptos = 2889 filas (ejemplo).              |
 | Self join               | Una tabla se une consigo misma; **requiere aliases**.                     | `A x JOIN A y ON ...`                       | `employees` (empleado) ↔ `employees` (manager).                |
 
