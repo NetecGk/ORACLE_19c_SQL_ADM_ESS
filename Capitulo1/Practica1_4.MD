@@ -12,13 +12,13 @@
 
 <br/><br/>
 
-## **Duración estimada**
+## Duración estimada
 
-**70 minutos**
+- 70 minutos.
 
 <br/><br/>
 
-## **Tabla de Ayuda**
+## Tabla de ayuda
 
 | Concepto / Función                              | Descripción breve                                         | Referencia oficial                                                                                  |
 | ----------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -31,11 +31,11 @@
 
 <br/><br/>
 
-## **Instrucciones**
+## Instrucciones
 
 <br/><br/>
 
-### **Tarea 1. Funciones de grupo básicas**
+### Tarea 1. Funciones de grupo básicas.
 
 1. Conéctate al esquema `HR`.
 2. Ejecuta la siguiente consulta para agrupar por departamento:
@@ -50,7 +50,7 @@
 
 <br/><br/>
 
-### **Tarea 2. Contando valores únicos y nulos**
+### Tarea 2. Contando valores únicos y nulos.
 
 1. Ejecuta las siguientes sentencias y analiza las diferencias:
 
@@ -63,7 +63,7 @@
 
 <br/><br/>
 
-### **Tarea 3. Corrigiendo ORA-00979**
+### Tarea 3. Corrigiendo ORA-00979.
 
 1. Ejecuta:
 
@@ -77,7 +77,7 @@
 
 <br/><br/>
 
-### **Tarea 4. DISTINCT y concatenaciones**
+### Tarea 4. `DISTINCT` y concatenaciones.
 
 1. Ejecuta:
 
@@ -90,7 +90,7 @@
 
 <br/><br/>
 
-### **Tarea 5. Operadores de conjunto: UNION vs UNION ALL**
+### Tarea 5. Operadores de conjunto: `UNION` vs. `UNION ALL`.
 
 1. Obtén todos los `job_id` del departamento 50 o del 80, sin duplicados:
 
@@ -104,7 +104,7 @@
 
 <br/><br/>
 
-### **Tarea 6. INTERSECT y MINUS**
+### Tarea 6. `INTERSECT` y `MINUS`.
 
 1. Identifica los puestos (`job_id`) que existen en ambos departamentos 50 y 80:
 
@@ -123,7 +123,7 @@
 
 <br/><br/>
 
-### **Tarea 7. Precedencia de operadores**
+### Tarea 7. Precedencia de operadores.
 
 1. Ejecuta y analiza:
 
@@ -139,7 +139,7 @@
 
 <br/><br/>
 
-### **Tarea 8. Desafíos**
+### Tarea 8. Desafíos.
 
 Responde a los siguientes **10 enunciados** escribiendo la sentencia SQL correcta sobre el esquema **HR**.
 Cada uno tiene una única respuesta que requiere aplicar correctamente **funciones de grupo**, **cláusulas de agregación** o **set operators**.
@@ -158,7 +158,7 @@ Cada uno tiene una única respuesta que requiere aplicar correctamente **funcion
 
 <br/><br/>
 
-## **Resultado Esperado**
+## Resultado esperado
 
 El participante demuestra dominio en:
 
@@ -169,7 +169,7 @@ El participante demuestra dominio en:
 * Capacidad de aplicar estos conceptos en consultas de nivel de certificación Oracle SQL (1Z0-082).
 
 
-La captura muestra correctamente el resultado esperado: una consulta con operadores de conjunto (INTERSECT) que devuelve un solo registro del departamento 80, con 34 empleados y un salario promedio de 8955.88235, evidenciando dominio de agrupaciones, HAVING, y precedencia entre operadores.
+La captura muestra correctamente el resultado esperado: una consulta con operadores de conjunto (`INTERSECT`) que devuelve un solo registro del departamento 80, con 34 empleados y un salario promedio de 8955.88235, evidenciando dominio de agrupaciones, HAVING, y precedencia entre operadores.
 
 
 ![Resultado Esperado](../images/p1-4.png)
