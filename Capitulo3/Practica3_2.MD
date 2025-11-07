@@ -1,8 +1,8 @@
 
 
-# **Práctica 3.2 Conexión a la base de datos con SQL*Plus**
+# Práctica 3.2. Conexión a la base de datos con SQL*Plus
 
-## **Objetivos**
+## Objetivos
 
 * Reconocer la relación entre el entorno del sistema operativo y la instancia de Oracle.
 * Utilizar el comando `oraenv` para configurar las variables de entorno requeridas.
@@ -12,13 +12,13 @@
 
 <br/><br/>
 
-## **Duración estimada**
+## Duración estimada
 
-**20 – 25 minutos**
+- 20–25 minutos.
 
 <br/><br/>
 
-## **Tabla de ayuda**
+## Tabla de ayuda
 
 | Comando o vista   | Descripción breve                                          | Ejemplo / Uso                                         |        |           |
 | ----------------- | ---------------------------------------------------------- | ----------------------------------------------------- | ------ | --------- |
@@ -35,9 +35,9 @@
 
 <br/><br/>
 
-## **Instrucciones**
+## Instrucciones
 
-### **Tarea 1. Verificación del usuario del sistema**
+### Tarea 1. Verificación del usuario del sistema.
 
 1. Abre una terminal en tu entorno Linux.
 2. Verifica el usuario actual y sus grupos asociados:
@@ -49,7 +49,7 @@
 
 <br/><br/>
 
-### **Tarea 2. Configuración del entorno Oracle**
+### Tarea 2. Configuración del entorno Oracle.
 
 1. Actualiza las variables de entorno necesarias para la conexión:
 
@@ -69,7 +69,7 @@
 
 <br/><br/>
 
-### **Tarea 3. Conexión inicial a SQL*Plus**
+### Tarea 3. Conexión inicial a SQL*Plus.
 
 1. Inicia sesión con SQL*Plus como administrador del sistema:
 
@@ -101,7 +101,7 @@
 
 <br/><br/>
 
-### **Tarea 4. Exploración adicional**
+### Tarea 4. Exploración adicional.
 
 1. Ejecuta nuevamente la consulta de instancia, esta vez agregando más columnas:
 
@@ -121,14 +121,14 @@
 
 <br/><br/>
 
-### **Tarea 5. Desafío**
+### Tarea 5. Desafío.
 
 Ejecuta una sola consulta SQL que muestre **la instancia**, **el estado de la base de datos**, **el host donde corre Oracle** y **la versión de la instancia**.
 *(Usa una combinación adecuada de columnas desde `v$instance` o una subconsulta si lo consideras necesario).*
 
 <br/><br/>
 
-## **Resultado Esperado**
+## Resultado esperado
 
 * El participante logra conectarse exitosamente a la base de datos usando SQL*Plus.
 * Se muestra la información correcta de la instancia (`instance_name`, `status`, `database_status`, `version`).
