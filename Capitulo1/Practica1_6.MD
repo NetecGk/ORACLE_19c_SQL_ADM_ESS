@@ -20,7 +20,7 @@
 <br/><br/>
 
 
-## **Tabla de Ayuda**
+## Tabla de ayuda
 
 | Concepto            | Descripción                                                          | Referencia oficial                                                                                                                                                      |
 | ------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -28,18 +28,18 @@
 | Correlated Subquery | Subconsulta que depende de valores de la consulta principal.         | [Correlated Subqueries](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/SELECT.html#GUID-CFA006CA-6FF1-4972-821E-6996142A51C6__I2066912)                  |
 | IN / NOT IN         | Evalúan pertenencia de un valor en una lista o conjunto.             | [IN NOT IN](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/IN-Condition.html) Conditions                                                                                                                          |
 | EXISTS / NOT EXISTS | Verifican existencia o ausencia de filas devueltas por una subquery. | [EXISTS](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/EXISTS-Condition.html) Condition                                                                                                                               |
-| ANY / ALL           | Compara con algún o todos los valores devueltos por una subquery.    | [Quantified Comparison Conditions](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Comparison-Conditions.html#GUID-72CA75A4-AE94-471E-993F-20B969DB933F)                                                                                                              |
+| ANY / ALL           | Compara con alguno o todos los valores devueltos por una subquery.    | [Quantified Comparison Conditions](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Comparison-Conditions.html#GUID-72CA75A4-AE94-471E-993F-20B969DB933F)                                                                                                              |
 | Scalar Subquery     | Devuelve un solo valor (una columna y una fila).                     | [Scalar Subquery Expressions](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Scalar-Subquery-Expressions.html)                                                                                                                 |
 
 <br/><br/>
 
 
-## **Instrucciones**
+## Instrucciones
 
 <br/><br/>
 
 
-### **Tarea 1. Identificar subqueries básicas**
+### Tarea 1. Identificar subqueries básicas.
 
 1. Conéctate al esquema `HR`.
 2. Consulta los empleados cuyo salario es **mayor al salario promedio** de todos los empleados.
@@ -55,7 +55,7 @@
 <br/><br/>
 
 
-### **Tarea 2. Subqueries de múltiples filas (IN / ANY / ALL)**
+### Tarea 2. Subqueries de múltiples filas (`IN` / `ANY` / `ALL`).
 
 1. Muestra los empleados que trabajan en los mismos departamentos que los empleados con el cargo `'IT_PROG'`.
 
@@ -70,7 +70,7 @@
 <br/><br/>
 
 
-### **Tarea 3. Subquery correlacionada con EXISTS**
+### Tarea 3. Subquery correlacionada con `EXISTS`.
 
 1. Muestra los empleados que tienen **al menos un subordinado** (usa la relación `manager_id`).
 
@@ -87,7 +87,7 @@
 <br/><br/>
 
 
-### **Tarea 4. Comparación IN vs EXISTS**
+### Tarea 4. Comparación `IN` vs `EXISTS`.
 
 1. Muestra los departamentos que tienen empleados asignados (usa `IN`).
 2. Reescribe la misma consulta usando `EXISTS`.
@@ -97,7 +97,7 @@
 <br/><br/>
 
 
-### **Tarea 5. Subqueries de tupla**
+### Tarea 5. Subqueries de tupla.
 
 1. Muestra el `employee_id`, `last_name` y `salary` de los empleados cuyo `(department_id, job_id)` coincida con el `(department_id, job_id)` de `'Den Raphaely'`.
 
@@ -114,7 +114,7 @@
 <br/><br/>
 
 
-### **Tarea 6. Reescritura de JOIN ↔ Subquery**
+### Tarea 6. Reescritura de `JOIN` ↔ Subquery.
 
 1. Escribe una consulta que muestre el nombre del empleado y su nombre de departamento usando un `JOIN`.
 2. Reescríbela usando una subquery en la cláusula `SELECT` o `WHERE`.
@@ -123,7 +123,7 @@
 <br/><br/>
 
 
-### **Tarea 7. Subquery anidada de varios niveles**
+### Tarea 7. Subquery anidada de varios niveles.
 
 1. Muestra el nombre de los empleados que ganan más que el promedio de los empleados de su propio departamento.
 
@@ -141,13 +141,13 @@
 <br/><br/>
 
 
-### **Tarea 8. Desafíos**
+### Tarea 8. Desafíos.
 
 A partir del esquema **HR**, resuelve las siguientes situaciones utilizando el tipo de subquery y/o predicado que consideres más adecuado.
 
 
 1. **Encuentra los empleados que trabajan en el mismo departamento que ‘Lex De Haan’.**
-   *(¿Conviene una subquery escalar, de tupla o con IN?)*
+   *(¿Conviene una subquery escalar, de tupla o con `IN`?)*
 
 2. **Muestra los empleados cuyo salario sea mayor que el salario promedio de todos los empleados.**
    *(¿Qué tipo de subquery te devuelve un solo valor?)*
