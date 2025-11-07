@@ -1,29 +1,29 @@
 
-# **Práctica 1.5 Joins en Oracle SQL**
+# Práctica 1.5. Joins en Oracle SQL
 
 <br/><br/>
 
-## **Objetivos**
+## Objetivos
 
-* Diferenciar cuándo usar `NATURAL`, `USING` y `ON`, y justificar su elección.
+* Diferenciar cuándo usar `NATURAL`, `USING` y `ON` y justificar su elección.
 * Construir equijoins y outer joins para resolver distintos escenarios del esquema HR.
 * Detectar y evitar productos cartesianos no deseados.
 * Implementar correctamente **self joins** (con **dos aliases obligatorios**) y explicar si el cruce es `INNER` u `OUTER`.
-* Validar checkpoints: *un self join requiere dos aliases* y *un self join puede ser INNER u OUTER*.
+* Validar checkpoints: *un self join requiere dos aliases* y *un self join puede ser `INNER` u `OUTER`*.
 
 
-## **Duración estimada**
+## Duración estimada
    70–85 minutos.
 
 <br/><br/>
 
-## **Tabla de Ayuda**
+## Tabla de Ayuda
 
 | Concepto                | Descripción breve                                                         | Sintaxis base                               | Ejemplo HR                                            |
 | ----------------------- | ------------------------------------------------------------------------- | ------------------------------------------- | -------------------------------------------------------------- |
 | Equijoin (`=`)          | Une filas por igualdad de claves.                                         | `... FROM A a JOIN B b ON a.k=b.k`          | `employees` ↔ `departments` por `department_id`.               |
 | `NATURAL JOIN`          | Une por todas las columnas **con el mismo nombre** en ambas tablas.       | `A NATURAL JOIN B`                          | Si ambas tienen `department_id`, se une por esa(s) columna(s). |
-| `USING`                 | Une por columnas **mismo nombre** listadas y las expone **una sola vez**. | `A JOIN B USING (col)`                      | `employees JOIN departments USING (department_id)`.            |
+| `USING`                 | Une por columnas con **el mismo nombre** listado y las expone **una sola vez**. | `A JOIN B USING (col)`                      | `employees JOIN departments USING (department_id)`.            |
 | `ON`                    | Condición libre (columnas con nombre igual o distinto).                   | `A JOIN B ON (<cond>)`                      | `locations.country_id = countries.country_id`.                 |
 | `LEFT/RIGHT/FULL OUTER` | Conserva filas de izquierda/derecha/ambas aunque no haya match.           | `A LEFT OUTER JOIN B ON ...`                | Empleados sin departamento (si existieran).                    |
 | Producto cartesiano     | Todas las combinaciones; **aparece si no hay condición**.                 | `A CROSS JOIN B` o `FROM A,B` sin condición | 107 empleados × 27 deptos = 2889 filas (ejemplo).              |
@@ -50,7 +50,7 @@
 <br/><br/>
 
 
-## **Objetivo Visual**
+## **Objetivo visual**
 
 Operadores de Conjuntos, son útiles para combinar resultados de consultas independientes
 
@@ -94,7 +94,7 @@ Operadores de Conjuntos, son útiles para combinar resultados de consultas indep
 
 <br/><br/>
 
-### **Tarea 2. `USING` vs `NATURAL`**
+### Tarea 2. `USING` vs. `NATURAL`.
 
 1. Repite el join Empleado–Departamento con `USING`:
 
@@ -219,12 +219,12 @@ Operadores de Conjuntos, son útiles para combinar resultados de consultas indep
 
 <br/><br/>
 
-### **Tarea 8. Comparativa `USING` vs `ON` en SELECT list**
+### **Tarea 8. Comparativa `USING` vs. `ON` en SELECT list**
 
 1. Con `USING (department_id)`, intenta seleccionar `e.department_id` → verifica el error; luego selecciona solo `department_id`.
 2. Repite con `ON` y selecciona `e.department_id` y `d.department_id` para ver la diferencia.
 
-**Nota:** Entiendes la **exposición de columnas** con `USING` (una sola) vs `ON` (puedes calificar cada lado).
+**Nota:** Entiendes la **exposición de columnas** con `USING` (una sola) vs. `ON` (puedes calificar cada lado).
 
 <br/><br/>
 
