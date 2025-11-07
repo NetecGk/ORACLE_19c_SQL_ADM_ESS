@@ -58,7 +58,7 @@ Operadores de Conjuntos, son útiles para combinar resultados de consultas indep
 
 ## **Instrucciones**
 
-### **Tarea 0. Verificación del esquema HR**
+### Tarea 0. Verificación del esquema HR.
 
 1. Lista tablas clave: `employees, departments, locations, countries, regions, jobs, job_history`.
 2. Describe columnas relevantes:
@@ -72,7 +72,7 @@ Operadores de Conjuntos, son útiles para combinar resultados de consultas indep
 
 <br/><br/>
 
-### **Tarea 1. Equijoins con `ON`**
+### Tarea 1. Equijoins con `ON`.
 
 1. Une empleados con departamentos (equijoin):
 
@@ -119,7 +119,7 @@ Operadores de Conjuntos, son útiles para combinar resultados de consultas indep
 
 <br/><br/>
 
-### **Tarea 3. Outer joins (LEFT/RIGHT/FULL)**
+### Tarea 3. Outer joins (`LEFT/RIGHT/FULL`).
 
 1. `LEFT OUTER`: todos los departamentos, tenga o no empleados.
 
@@ -130,7 +130,7 @@ Operadores de Conjuntos, son útiles para combinar resultados de consultas indep
    ORDER BY d.department_id, e.employee_id;
    ```
 
-2. `RIGHT OUTER`: todos los empleados, incluso si su `department_id` no matchea (si existiera ese caso):
+2. `RIGHT OUTER`: todos los empleados, incluso si su `department_id` no coincide (si existiera ese caso):
 
    ```sql
    SELECT d.department_id, d.department_name, e.employee_id
@@ -150,7 +150,7 @@ Operadores de Conjuntos, son útiles para combinar resultados de consultas indep
 
 <br/><br/>
 
-### **Tarea 4. Producto cartesiano**
+### Tarea 4. Producto cartesiano.
 
 1. Provoca un cartesiano (controlado) y cuenta filas:
 
@@ -166,7 +166,7 @@ Operadores de Conjuntos, son útiles para combinar resultados de consultas indep
 
 <br/><br/>
 
-### **Tarea 5. Self join (INNER) — jerarquía empleado/manager**
+### Tarea 5. Self join (`INNER`): jerarquía empleado/manager.
 
 1. Muestra empleado y su manager (requiere **dos aliases**):
 
@@ -183,7 +183,7 @@ Operadores de Conjuntos, son útiles para combinar resultados de consultas indep
 
 <br/><br/>
 
-### **Tarea 6. Self join (OUTER) — incluir empleados sin manager**
+### Tarea 6. Self join (`OUTER`): incluir empleados sin manager.
 
 1. Conserva todos los empleados, aunque no tengan manager:
 
@@ -200,7 +200,7 @@ Operadores de Conjuntos, son útiles para combinar resultados de consultas indep
 
 <br/><br/>
 
-### **Tarea 7. Join multi-tabla con `ON` y condición compuesta**
+### Tarea 7. Join multi-tabla con `ON` y condición compuesta.
 
 1. Recorre departamento → ubicación → país → región:
 
@@ -219,7 +219,7 @@ Operadores de Conjuntos, son útiles para combinar resultados de consultas indep
 
 <br/><br/>
 
-### **Tarea 8. Comparativa `USING` vs. `ON` en SELECT list**
+### Tarea 8. Comparativa `USING` vs. `ON` en `SELECT` list.
 
 1. Con `USING (department_id)`, intenta seleccionar `e.department_id` → verifica el error; luego selecciona solo `department_id`.
 2. Repite con `ON` y selecciona `e.department_id` y `d.department_id` para ver la diferencia.
@@ -228,7 +228,7 @@ Operadores de Conjuntos, son útiles para combinar resultados de consultas indep
 
 <br/><br/>
 
-### **Tarea 9. Desafíos**
+### Tarea 9. Desafíos.
 
 Diseña **una sola consulta** que muestre:
 
