@@ -178,8 +178,8 @@ A partir del esquema **HR**, resuelve las siguientes situaciones utilizando el t
 
 <br/><br/>
 
-## **Resultado Esperado**
+## Resultado esperado
 
-La captura de pantalla siguiente, muestra al empleado con EMPLOYEE_ID = 178 y apellido Grant trabaja en un departamento cuyo manager_id es NULL, es decir, un departamento sin gerente asignado.
+La captura de pantalla siguiente muestra al empleado con EMPLOYEE_ID = 178 y apellido Grant trabaja en un departamento cuyo manager_id es NULL, es decir, un departamento sin gerente asignado.
 
 ![Resultado Esperado Desafío 10](../images/p1-6.png)
