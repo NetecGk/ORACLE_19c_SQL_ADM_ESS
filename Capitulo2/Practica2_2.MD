@@ -205,9 +205,9 @@
 1. Crea una tabla llamada `historial_cursos` copiando la estructura de `hr_cursos` pero sin datos.
 2. Añade una columna llamada `fecha_registro` con valor por defecto `SYSDATE`.
 3. Inserta algunos registros manualmente.
-4. Cambia la tabla a modo **READ ONLY**.
+4. Cambia la tabla a modo `READ ONLY`.
 5. Intenta modificar un registro para observar el error.
-6. Regresa la tabla a **READ WRITE** y elimina una columna.
+6. Regresa la tabla a `READ WRITE` y elimina una columna.
 7. Finaliza eliminando la tabla con `DROP TABLE historial_cursos PURGE;`.
 
 <br/><br/>
