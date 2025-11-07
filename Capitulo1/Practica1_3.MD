@@ -174,7 +174,7 @@
 
 ### Tarea 7. `ADD_MONTHS` + `NEXT_DAY` con `NLS_TERRITORY`.
 
-> **Clave para Preguntas 5/6**: Cambia `NLS_TERRITORY` y observa el *día de inicio de semana* y nombres de días.
+- Cambia `NLS_TERRITORY` y observa el *día de inicio de semana* y nombres de días.
 
 1. Observa el efecto del territorio:
 
@@ -186,7 +186,7 @@
      NEXT_DAY(SYSDATE, 'MONDAY') AS prox_lunes_en
    FROM dual;
    ```
-2. Cambia territorio y repite:
+2. Cambia el territorio y repite:
 
    ```sql
    ALTER SESSION SET NLS_TERRITORY = 'SPAIN';
@@ -196,11 +196,11 @@
      NEXT_DAY(SYSDATE, 'LUNES') AS prox_lunes_es
    FROM dual;
    ```
-3. **Pregunta guía**: ¿Por qué a veces `NEXT_DAY` falla si el nombre del día no coincide con el idioma de la sesión? ¿Cómo lo solucionas?
+3. ¿Por qué a veces `NEXT_DAY` falla si el nombre del día no coincide con el idioma de la sesión? ¿Cómo lo solucionas?
 
 <br/><br/>
 
-### **Tarea 8. Anidamiento y control de tipo devuelto**
+### Tarea 8. Anidamiento y control de tipo devuelto.
 
 1. Valida tipos al anidar:
 
@@ -215,7 +215,7 @@
 
 <br/><br/>
 
-### **Tarea 9. Desafíos**
+### Tarea 9. Desafíos.
 
 > Redacta sentencias y obtén el resultado correcto en tu sesión. Incluye el *query* y una nota explicando el razonamiento (1–2 líneas).
 
@@ -224,7 +224,7 @@
 3. Muestra empleados cuya fecha de contratación cae **el próximo viernes** respecto de `SYSDATE` al cambiar `NLS_TERRITORY` a un territorio europeo (demuestra la configuración y el filtro).
 4. Devuelve una columna `salario_o_cero` que sea `salary` si no es `NULL`, y `0` en caso contrario, **sin usar `NVL`**.
 5. Devuelve `NULL` si el `job_id` es `IT_PROG`; el mismo `job_id` en otro caso (**obligatorio con `NULLIF`**).
-6. Convierte `'31/12/49'` con `YY` y con `RR` y muestra ambas fechas; explica diferencias de siglo.
+6. Convierte `'31/12/49'` con `YY` y con `RR` y muestra ambas fechas; explica las diferencias de siglo.
 7. Calcula la fecha **tres meses antes del último día del mes siguiente** a `SYSDATE` en formato `YYYY-MM-DD`.
 8. Muestra el *primer lunes del mes próximo* en formato `DAY DD-MON-YYYY` con nombres de día/mes en español.
 9. Construye una cadena con `last_name` y `salary` con formato monetario local (usa `TO_CHAR` numérico y **`G`/`D`**).
@@ -232,7 +232,7 @@
 
 <br/><br/>
 
-## **Resultado Esperado**
+## Resultado esperado
 
 Al finalizar, debes entregar:
 
@@ -242,7 +242,7 @@ Al finalizar, debes entregar:
   * Notas breves de tipo devuelto para cada expresión clave (especialmente tareas 5, 6 y 8).
   * Observaciones sobre los efectos de `NLS_TERRITORY` en `NEXT_DAY` (tarea 7).
   * Conclusión clara sobre `YY` vs `RR` (tarea 5).
-* Evidencias (copias/pequeñas capturas o *spools*) de:
+  * Evidencias (copias/pequeñas capturas o *spools*) de:
 
   * Aritmética de fechas (tarea 3).
   * Formateo con `TO_CHAR` (tarea 4).
