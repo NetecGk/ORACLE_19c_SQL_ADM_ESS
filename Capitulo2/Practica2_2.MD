@@ -1,23 +1,23 @@
-# **Práctica 2.2 Usando DDL para definir y modificar estructuras de tablas**
+# Práctica 2.2. Usando DDL para definir y modificar estructuras de tablas
 
-## **Objetivos**
+## Objetivos
 
 * Crear nuevas tablas utilizando la sentencia `CREATE TABLE`.
 * Verificar la existencia y estructura de tablas mediante las vistas del diccionario de datos.
 * Modificar la estructura de tablas con `ALTER TABLE` (añadir o eliminar columnas).
-* Establecer el modo **READ ONLY** y restaurar el modo **READ WRITE**.
+* Establecer el modo `READ ONLY` y restaurar el modo `READ WRITE`.
 * Eliminar estructuras con `DROP` y limpiar datos con `TRUNCATE`.
 * Comprender que los comandos DDL **confirman los cambios automáticamente** (COMMIT implícito).
 
 <br/><br/>
 
-## **Duración estimada**
+## Duración estimada
 
-**60 a 75 minutos** 
+- 60 a 75 minutos.    
 
 <br/><br/>
 
-## **Tabla de ayuda**
+## Tabla de ayuda
 
 | Tema                   | Comando / Concepto                | Sintaxis breve                                 | Referencia oficial (Oracle 19c)           |
 | ---------------------- | --------------------------------- | ---------------------------------------------- | ----------------------------------------- |
@@ -33,9 +33,9 @@
 
 <br/><br/>
 
-## **Objetivo visual**
+## Objetivo visual
 
-**Diagrama: “Ciclo de vida de una tabla en Oracle Database”**
+**Diagrama. “Ciclo de vida de una tabla en Oracle Database”**
 
 ![DML & DDL](../images/p2-1.png)
 
@@ -43,14 +43,14 @@
 
 <br/><br/>
 
-## **Instrucciones**
+## Instrucciones
 
 > **Entorno:** Oracle Database 19c, usuario HR (o usuario con permisos equivalentes).
 > Usa SQL Developer o SQL*Plus. Guarda tus scripts como respaldo.
 
 <br/><br/>
 
-### **Tarea 1. Creación de una tabla básica**
+### Tarea 1. Creación de una tabla básica.
 
 1. Conéctate como usuario **HR**.
 
@@ -80,7 +80,7 @@
 
 <br/><br/>
 
-### **Tarea 2. Crear tabla a partir de otra existente (CTAS)**
+### Tarea 2. Crear tabla a partir de otra existente (CTAS).
 
 1. Crea una tabla llamada `empleados_temp` con los empleados actuales de HR:
 
@@ -105,7 +105,7 @@
 
 <br/><br/>
 
-### **Tarea 3. Alterar una tabla**
+### Tarea 3. Alterar una tabla.
 
 1. Agrega una columna **“instructor”** a `hr_cursos`:
 
@@ -134,9 +134,9 @@
 
 <br/><br/>
 
-### **Tarea 4. Cambiar estado de la tabla (READ ONLY / READ WRITE)**
+### Tarea 4. Cambiar estado de la tabla (`READ ONLY` / `READ WRITE`).
 
-1. Cambia la tabla a modo solo lectura:
+1. Cambia la tabla a modo de **"solo lectura"**:
 
    ```sql
    ALTER TABLE hr_cursos READ ONLY;
@@ -171,7 +171,7 @@
 
 <br/><br/>
 
-### **Tarea 5. Vaciar y eliminar tablas**
+### Tarea 5. Vaciar y eliminar tablas.
 
 1. Vacía `empleados_temp` sin eliminar su estructura:
 
@@ -200,7 +200,7 @@
 
 <br/><br/>
 
-### **Tarea 6. Desafío**
+### Tarea 6. Desafío.
 
 1. Crea una tabla llamada `historial_cursos` copiando la estructura de `hr_cursos` pero sin datos.
 2. Añade una columna llamada `fecha_registro` con valor por defecto `SYSDATE`.
@@ -212,10 +212,10 @@
 
 <br/><br/>
 
-## **Resultado Esperado**
+## Resultado esperado
 
 * Se crean correctamente las tablas `HR_CURSOS` y `EMPLEADOS_TEMP`.
 * Se comprueba el funcionamiento de los comandos `ALTER`, `TRUNCATE` y `DROP`.
 * Se entiende que los comandos DDL **confirman automáticamente** sus efectos.
-* Se demuestra la diferencia entre **READ ONLY** y **READ WRITE**.
+* Se demuestra la diferencia entre **`READ ONLY`** y **`READ WRITE`**.
 * El participante completa el **desafío** mostrando el ciclo de vida de una tabla en Oracle Database.
