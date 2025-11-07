@@ -45,20 +45,20 @@ El diagrama representa la estructura de tablas relacionadas con la gestión de e
 
 ## Instrucciones
 
-### **Tarea 1. Verificar el modelo entidad-relación del esquema HR**
+### Tarea 1. Verificar el modelo entidad-relación del esquema HR.
 
 1. Accede al esquema **HR** (ya disponible en la base de datos).
 2. Observa las tablas principales:
 
-   * EMPLOYEES
-   * DEPARTMENTS
-   * JOBS
-   * LOCATIONS
-   * COUNTRIES
-   * REGIONS
+   * `EMPLOYEES`
+   * `DEPARTMENTS`
+   * `JOBS`
+   * `LOCATIONS`
+   * `COUNTRIES`
+   * `REGIONS`
 3. Abre el diagrama E-R proporcionado (en el material del curso o mediante SQL Developer):
 
-   * En SQL Developer: **View → Data Modeler → Browser → HR Diagram**
+   * En SQL Developer: **View → Data Modeler → Browser → HR Diagram**.
    * O ejecuta el siguiente comando para listar las tablas:
 
      ```sql
@@ -74,7 +74,7 @@ El diagrama representa la estructura de tablas relacionadas con la gestión de e
 
 <br/><br/>
 
-### **Tarea 2. Verificar el entorno**
+### Tarea 2. Verificar el entorno.
 
 1. Inicia sesión con tu usuario asignado en SQL*Plus, SQLcl o SQL Developer.
 2. Verifica la conexión ejecutando:
@@ -91,7 +91,7 @@ El diagrama representa la estructura de tablas relacionadas con la gestión de e
 
 <br/><br/>
 
-### **Tarea 3. Recuperar datos básicos**
+### Tarea 3. Recuperar datos básicos.
 
 1. Consulta todas las filas de la tabla `EMPLOYEES`:
 
@@ -117,7 +117,7 @@ El diagrama representa la estructura de tablas relacionadas con la gestión de e
 
 <br/><br/>
 
-### **Tarea 4. Operadores y valores NULL**
+### Tarea 4. Operadores y valores `NULL`.
 
 1. Ejecuta:
 
@@ -135,7 +135,7 @@ El diagrama representa la estructura de tablas relacionadas con la gestión de e
 
 <br/><br/>
 
-### **Tarea 5. Uso de la tabla DUAL**
+### Tarea 5. Uso de la tabla `DUAL`.
 
 1. Ejecuta operaciones matemáticas y funciones:
 
@@ -147,7 +147,7 @@ El diagrama representa la estructura de tablas relacionadas con la gestión de e
 
 <br/><br/>
 
-### **Tarea 6. Variables de sustitución**
+### Tarea 6. Variables de sustitución.
 
 1. Ejecuta con `&` (solicita cada vez el valor):
 
@@ -177,7 +177,7 @@ El diagrama representa la estructura de tablas relacionadas con la gestión de e
 
 <br/><br/>
 
-### **Tarea 7. Combinar condiciones lógicas**
+### Tarea 7. Combinar condiciones lógicas.
 
 1. Muestra empleados del departamento 50 con salario > 7000:
 
@@ -203,7 +203,7 @@ El diagrama representa la estructura de tablas relacionadas con la gestión de e
 
 <br/><br/>
 
-### **Tarea 8. Desafíos**
+### .Tarea 8. Desafíos.
 
 Ejecuta las siguientes 10 consultas utilizando el esquema **HR**.
 No se muestran las soluciones; analiza el resultado esperado y valida tus consultas con base en la sintaxis y comportamiento de Oracle SQL.
@@ -217,7 +217,7 @@ No se muestran las soluciones; analiza el resultado esperado y valida tus consul
 7. Lista los empleados cuyo **nombre tenga exactamente 5 caracteres**.
 8. Usa una variable `&job_id` para mostrar los empleados de un trabajo específico.
 9. Calcula el salario anual (salario * 12) de cada empleado y ordénalo de mayor a menor.
-10. Muestra todos los departamentos con empleados cuyo **apellido contenga la letra “a”** y **salario > 9000**.
+10. Muestra todos los departamentos con empleados cuyo **apellido contenga la letra “"a"** y **salario > 9000**.
 
 Guarda tus sentencias en el mismo archivo `practica1_2.sql` debajo de esta sección, separadas por comentarios:
 
@@ -231,7 +231,7 @@ Guarda tus sentencias en el mismo archivo `practica1_2.sql` debajo de esta secci
 
 <br/><br/>
 
-### **Entrega sugerida**
+### Entrega sugerida.
 
 (Opcional) Consulta con tu instructor asignado si habrá entregas correspondientes.
 * Archivo `practica1_2.sql` con todos los comandos ejecutados y comentarios `-- Explicación`.
@@ -241,20 +241,20 @@ Guarda tus sentencias en el mismo archivo `practica1_2.sql` debajo de esta secci
 
 <br/><br/>
 
-## **Resultado Esperado**
+## Resultado esperado
 
 | Nº | Concepto evaluado                | Verificación                         |
 | -- | -------------------------------- | ------------------------------------ |
-| 1  | Uso correcto de `LIKE`, `%`, `_` | Coincide inicio/fin de patrón        |
-| 2  | `IS NULL`                        | Devuelve pocos registros (1 o 2)     |
-| 3  | Concatenación y cálculo          | Columna extra con aumento            |
-| 4  | Comparación de fechas            | Fechas posteriores a 2005            |
-| 5  | `OR`, `IN`, `ORDER BY`           | Departamentos correctos y orden      |
-| 6  | `IS NOT NULL` + `AND`            | Solo filas con comisión              |
-| 7  | Longitud con `_`                 | Nombres de 5 caracteres              |
-| 8  | Variable `&` o `&&`              | Solicita o reutiliza parámetro       |
-| 9  | Expresión aritmética             | Columna “anual” descendente          |
-| 10 | `LIKE` + `AND` + `DISTINCT`      | Departamentos válidos sin duplicados |
+| 1  | Uso correcto de `LIKE`, `%`, `_` | Coincide inicio/fin de patrón.        |
+| 2  | `IS NULL`.                        | Devuelve pocos registros (1 o 2).     |
+| 3  | Concatenación y cálculo.          | Columna extra con aumento.            |
+| 4  | Comparación de fechas.            | Fechas posteriores a 2005.            |
+| 5  | `OR`, `IN`, `ORDER BY`.           | Departamentos correctos y orden.      |
+| 6  | `IS NOT NULL` + `AND`.            | Solo filas con comisión.              |
+| 7  | Longitud con `_`.                 | Nombres de 5 caracteres.              |
+| 8  | Variable `&` o `&&`.              | Solicita o reutiliza parámetro.       |
+| 9  | Expresión aritmética.             | Columna “anual” descendente.          |
+| 10 | `LIKE` + `AND` + `DISTINCT`.      | Departamentos válidos sin duplicados. |
 
 
 <br/><br>
