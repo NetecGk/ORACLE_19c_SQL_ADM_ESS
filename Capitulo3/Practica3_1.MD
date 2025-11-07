@@ -1,18 +1,18 @@
-# **Práctica 3.1 Quiz**
+# Práctica 3.1. Quiz
 
-## **Objetivos**
+## Objetivos
 
 Reafirmar los conocimientos teóricos de terminología y conceptos fundamentales relacionados con bases de datos Oracle.
 
 <br/><br/>
 
-## **Duración estimada**
+## Duración estimada
 
-15 minutos
+- 15 minutos.
 
 <br/><br/>
 
-## **Tabla de Ayuda**
+## Tabla de ayuda
 
 | Concepto                 | Descripción breve                                                                 | Referencia oficial                                                                                                      |
 | ------------------------ | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -21,11 +21,11 @@ Reafirmar los conocimientos teóricos de terminología y conceptos fundamentales
 | **Tablespace**           | Unidad lógica de almacenamiento dentro de la base de datos.                       | [Tablespaces](https://docs.oracle.com/en/database/oracle/oracle-database/26/admin/managing-tablespaces.html#GUID-9A3CE861-80FE-4813-B496-287B69A79C46)                     |
 | **Schema**               | Colección de objetos (tablas, vistas, índices, etc.) pertenecientes a un usuario. | [Schemas and Users](https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/introduction-to-oracle-database.html#GUID-ACACFFBC-BCB9-4BA9-A2A3-1B9B2003B3B4)         |
 
-**Nota:** Esta práctica no requiere ejecución en SQL Developer o terminal; su propósito es evaluar tu comprensión conceptual previa a las prácticas técnicas.
+**Nota:** esta práctica no requiere ejecución en SQL Developer o terminal; su propósito es evaluar tu comprensión conceptual previa a las prácticas técnicas.
 
 <br/><br/>
 
-## **Objetivo Visual**
+## Objetivo visual
 
 ![Arquitectura Oracle](../images/arquitectura.png)
 
@@ -33,9 +33,9 @@ Reafirmar los conocimientos teóricos de terminología y conceptos fundamentales
 
 <br/><br/>
 
-## **Instrucciones**
+## Instrucciones
 
-### **Tarea 1. Acceso al cuestionario**
+### Tarea 1. Acceso al cuestionario.
 
 1. Abre el enlace proporcionado por el instructor:
     [https://forms.gle/GsKnXGfSKWYupkBUA](https://forms.gle/GsKnXGfSKWYupkBUA)
@@ -48,7 +48,7 @@ Reafirmar los conocimientos teóricos de terminología y conceptos fundamentales
   
 <br/><br/>
 
-## **Resultado Esperado**
+## Resultado esperado
 
 Captura de pantalla que muestre la confirmación de envío del formulario completado.
 
