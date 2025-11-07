@@ -210,7 +210,7 @@ No se muestran las soluciones; analiza el resultado esperado y valida tus consul
 
 1. Muestra los empleados cuyo nombre comience con la letra **A** y termine con **s**.
 2. Obtén los empleados que **no tienen jefe asignado**.
-3. Muestra el **nombre completo** (nombre + apellido) y el salario **aumentado en 10%**.
+3. Muestra el **nombre completo** (nombre + apellido) y el salario **aumentado en 10 % **.
 4. Lista los empleados contratados **después del año 2005**.
 5. Obtén todos los empleados **del departamento de IT o de Sales**, ordenados por `hire_date`.
 6. Muestra los empleados **con comisión no nula** y salario **superior a 8000**.
