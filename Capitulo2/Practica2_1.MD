@@ -1,4 +1,4 @@
-**Práctica 2.1 Usando DML para gestionar datos y transacciones**
+# Práctica 2.1. Usando DML para gestionar datos y transacciones
 
 
 ## Objetivos
@@ -15,7 +15,7 @@
 
 ## Duración estimada
 
-**55–70 minutos**  
+- 55–70 minutos.  
 
 <br/><br/>
 
@@ -48,7 +48,7 @@
 
 > **Entorno**: conéctate con un usuario con permisos de creación de objetos en tu instancia de práctica. No modifiques tablas del esquema HR de forma directa.
 
-### Tarea 1. Preparación de la tabla de práctica
+### Tarea 1. Preparación de la tabla de práctica.
 
 1. Ejecuta el script de limpieza indicado en las notas previas.
 
@@ -74,7 +74,7 @@
 
 <br/><br/>
 
-### Tarea 2. Primera inserción **sin** lista de columnas
+### Tarea 2. Primera inserción sin lista de columnas.
 
 1. Inserta **una** fila sin listar columnas (respeta el orden de definición):
 
@@ -91,7 +91,7 @@
 
 <br/><br/>
 
-### Tarea 3. Inserciones **con** lista de columnas
+### Tarea 3. Inserciones con lista de columnas.
 
 1. Inserta dos filas listando las columnas de forma explícita:
 
@@ -111,7 +111,7 @@
 
 <br/><br/>
 
-### Tarea 4. Script **parametrizable** para inserción (variables de sustitución)
+### Tarea 4. Script parametrizable para inserción (variables de sustitución).
 
 1. Crea un archivo `ins_emp_dml.sql` con el siguiente contenido:
 
@@ -150,7 +150,7 @@
    ```
 <br/><br/>
 
-### Tarea 5. Persistir las inserciones
+### Tarea 5. Persistir las inserciones.
 
 1. Ejecuta:
 
@@ -166,7 +166,7 @@
 
 <br/><br/>
 
-### Tarea 6. Actualizaciones y eliminaciones
+### Tarea 6. Actualizaciones y eliminaciones.
 
 1. Cambia el **apellido** del empleado con `emp_id = 3` a **Drexler**:
 
@@ -210,12 +210,11 @@
    ```
 
 <br/><br/>
-#
-## Tarea 7. Control fino de transacciones con `SAVEPOINT`
+### Tarea 7. Control fino de transacciones con `SAVEPOINT`.
 
 > Realiza esta tarea **en una sola sesión** para apreciar el efecto.
 
-1. Inserta **una** nueva fila usando tu script `ins_emp_dml.sql` (por ejemplo `emp_id=6`). **No hagas COMMIT** todavía.
+1. Inserta **una** nueva fila usando tu script `ins_emp_dml.sql` (por ejemplo `emp_id=6`). **No hagas `COMMIT`** todavía.
 
 2. Confirma que la fila aparece:
 
@@ -257,18 +256,18 @@
 
 <br/><br/>
 
-### **Tarea 8. Desafío**
+### Tarea 8. Desafío.
 
 * Modifica `ins_emp_dml.sql` para **generar `email` automáticamente** concatenando:
 
-  * la **primera letra** de `first_name` + los **primeros 7 caracteres** de `last_name`, en **minúsculas**, y el sufijo `@example.com`.
+* La **primera letra** de `first_name` + los **primeros 7 caracteres** de `last_name`, en **minúsculas**, y el sufijo `@example.com`.
 * Pista (una opción): usa funciones `LOWER`, `SUBSTR` y concatenación `||`; convierte el script para **no pedir** `&p_email`.
 * Inserta con el script un registro de prueba y verifica que el `email` se generó como se esperaba.
   Ejemplo esperado para `First=María`, `Last=Hernandez` → `mhernand@example.com`.
 
 <br/><br/>
 
-## Resultado Esperado
+## Resultado esperado
 
 * **Tabla creada** (`EMP_DML`) con PK y una restricción `UNIQUE` sobre `email`.
 * **Altas** realizadas con y sin lista de columnas, y mediante **script parametrizable**.
