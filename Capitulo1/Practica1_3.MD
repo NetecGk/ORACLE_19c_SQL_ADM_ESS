@@ -1,6 +1,6 @@
-# **Práctica 1.3 Funciones de una sola fila, Fechas y Conversión**
+# Práctica 1.3. Funciones de una sola fila, fechas y conversión
 
-## **Objetivos**
+## Objetivos
 
 * Identificar la categoría de cada función (carácter, numérica, fecha, conversión) y su tipo de retorno.
 * Formatear fechas y números con `TO_CHAR` usando *format models* comunes (`YYYY`, `RR`, `MON`, `DD`, `FM`, `999G999D00`, etc.).
@@ -9,11 +9,11 @@
 * Configurar la sesión (`NLS_TERRITORY`) para observar efectos en `NEXT_DAY` y nombres de día/mes.
 * Validar y explicar casos límite con `YY` y `RR` (p. ej., años 49/50/99/00).
 
-## **Duración estimada**
+## Duración estimada
 
 90–110 minutos.
 
-## **Tabla de Ayuda**
+## Tabla de ayuda
 
 > Sugerencia: abre cada referencia y tenla a la mano durante la práctica.
 
@@ -39,7 +39,7 @@
 
 <br/><br/>
 
-## **Objetivo Visual**
+## Objetivo visual
 
 
 | **Dato de entrada**    | **Función**                  | **Tipo devuelto**                    | **Notas**                              |
@@ -56,9 +56,9 @@
 
 <br/><br/>
 
-## **Instrucciones**  
+## Instrucciones  
 
-### **Tarea 0. Preparación y verificación rápida (HR)**
+### Tarea 0. Preparación y verificación rápida (HR).
 
 1. Conéctate a la BD como un usuario con acceso al esquema **HR**.
    `SELECT COUNT(*) FROM hr.employees;` (debe devolver filas > 0).
@@ -66,7 +66,7 @@
 
 <br/><br/>
 
-### **Tarea 1. Funciones de carácter**
+### Tarea 1. Funciones de carácter.
 
 1. Ejecuta y explica brevemente qué hace cada expresión y su tipo devuelto:
 
@@ -83,7 +83,7 @@
 
 <br/><br/>
 
-### **Tarea 2. Funciones numéricas**
+### Tarea 2. Funciones numéricas.
 
 1. Practica con `salary` (NUMBER):
 
@@ -100,7 +100,7 @@
 
 <br/><br/>
 
-### **Tarea 3. Fechas y aritmética de fechas**
+### Tarea 3. Fechas y aritmética de fechas.
 
 1. Observa la fecha actual y realiza aritmética:
 
@@ -116,7 +116,7 @@
 
 <br/><br/>
 
-### **Tarea 4. `TO_CHAR` con *format models***
+### Tarea 4. `TO_CHAR` con **format models**.
 
 1. Formatea fecha y número:
 
@@ -131,7 +131,7 @@
 
 <br/><br/>
 
-### **Tarea 5. `TO_DATE` / `TO_NUMBER` y `YY` vs `RR`**
+### Tarea 5. `TO_DATE` / `TO_NUMBER` y `YY` vs `RR`.
 
 1. Conversión con `YY`:
 
@@ -147,11 +147,11 @@
           TO_DATE('01-01-50','DD-MM-RR') AS d2_rr
    FROM dual;
    ```
-3. **Explica**: ¿Cómo determina Oracle el siglo con `YY` vs `RR`? Anota tu conclusión.
+3. **Explica**: ¿cómo determina Oracle el siglo con `YY` vs. `RR`? Anota tu conclusión.
 
 <br/><br/>
 
-### **Tarea 6. `NVL`, `NVL2`, `NULLIF`, `COALESCE`**
+### Tarea 6. `NVL`, `NVL2`, `NULLIF`, `COALESCE`.
 
 1. Crea ejemplos con posibles `NULL`:
 
@@ -165,14 +165,14 @@
    FROM hr.employees
    WHERE ROWNUM <= 10;
    ```
-2. **Ejercicio**: usando **`NULLIF`** y **`COALESCE`**, construye:
+2. **Ejercicio.** usa **`NULLIF`** y **`COALESCE`**, para construir:
 
-   * a) Una expresión que devuelva `NULL` cuando `salary` y `NVL(salary,0)` sean iguales, y el `salary` en otro caso.
-   * b) Una expresión que elija en orden: `commission_pct`, si `NULL` use `bonus` (supón columna `bonus`), y si también es `NULL` use `0`. *(Si no existe `bonus`, crea una CTE con datos de prueba.)*
+   * a) Una expresión que devuelva `NULL` cuando `salary` y `NVL(salary,0)` sean iguales y el `salary` en otro caso.
+   * b) Una expresión que elija en orden: `commission_pct`, si `NULL` usa `bonus` (supón columna `bonus`) y si también es `NULL` usa `0`. *(Si no existe `bonus`, crea una CTE con datos de prueba).*
 
 <br/><br/>
 
-### **Tarea 7. `ADD_MONTHS` + `NEXT_DAY` con `NLS_TERRITORY`**
+### Tarea 7. `ADD_MONTHS` + `NEXT_DAY` con `NLS_TERRITORY`.
 
 > **Clave para Preguntas 5/6**: Cambia `NLS_TERRITORY` y observa el *día de inicio de semana* y nombres de días.
 
