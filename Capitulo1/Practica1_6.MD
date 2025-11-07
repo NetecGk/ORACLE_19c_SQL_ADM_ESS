@@ -1,8 +1,8 @@
-# **Práctica 1.6 Subqueries**
+# Práctica 1.6. Subqueries
 
 <br/><br/>
 
-## **Objetivos**
+## Objetivos
 
 * Comprender la diferencia entre subqueries simples, múltiples y correlacionadas.
 * Utilizar correctamente los predicados `IN`, `NOT IN`, `EXISTS` y `NOT EXISTS`.
