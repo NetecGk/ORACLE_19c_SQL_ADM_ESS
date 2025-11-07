@@ -1,8 +1,8 @@
-# **Práctica 1.4 Agregación y Operadores de Conjuntos**
+# Práctica 1.4. Agregación y operadores de conjuntos
 
 <br/><br/>
 
-## **Objetivos**
+## Objetivos
 
 * Usar funciones de grupo (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`) para resumir datos.
 * Aplicar `GROUP BY` y `HAVING` para generar y filtrar agrupaciones.
