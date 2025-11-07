@@ -245,7 +245,7 @@ Diseña **una sola consulta** que muestre:
 
 <br/><br/>
 
-## **Resultado Esperado**
+## **Resultado esperado**
    
 La captura siguiente evidencia que la consulta integra correctamente un self join con varios outer joins, mostrando la relación completa entre empleado, gerente, departamento y región.
 
